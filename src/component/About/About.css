@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .image:hover {
+    transform: scale(1.1);
+  }
+  
+  .AboutUsContainer {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease-out;
+    padding-top: 3rem;
+  }
+  
+  .AboutUsContainer h1 {
+    font-size: 3.5rem;
+  }
+  
+  .font {
+    font-weight: 900;
+    color: red;
+    text-align: center;
+  }
+  
+  .AboutUsText {
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  
+  .AboutUsInnerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .AboutUs {
+    display: grid;
+    align-items: center;
+    width: calc(50% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .AboutUs:hover {
+    transform: translateY(-10px);
+  }
+  
+  @media (max-width: 728px) {
+    .AboutUs {
+      width: calc(100% - 20px);
+    }
+    .AboutUs video {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .AboutUsHeading {
+      display: block;
+      margin-bottom: 25px;
+      margin-top: 10px;
+      text-align: left;
+      font-size: xx-large;
+      color: white;
+    }
+  
+    .AboutUs {
+      display: block;
+      align-items: center;
+      max-width: 492px;
+      margin: 10px;
+    }
+  
+    .AboutUsInnerContainer {
+      justify-content: space-evenly;
+    }
+  
+    .AboutUsRight {
+      margin-left: 20px;
+    }
+  }
+  
+  .expectations {
+    text-align: left;
+  }
+  
+  .expectations ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .expectations li {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #ddd;
+  }
+  .highlight {
+    color: orange;
+  }
+  .expect {
+    margin-top: -2rem;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .AboutUs video {
+    margin-top: 2rem;
+    padding: 0;
+    border-radius: 1rem;
+  }
+  .expectations h1{
+color: #676060;
+margin-left: 1rem;
+margin-top: 1rem;
+  }

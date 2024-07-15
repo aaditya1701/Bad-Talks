@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Footer from "./component/Footer/Footer";
 import Navbar from "./component/Navbar/Navbar";
 import EventDetails from "./component/EventDetails/EventDetails";
-import WhatIsBad from "./component/Whatisbad/WhatIsBad";
+import WhatIsBad from "./component/WhatisBad/WhatisBad";
 
 import RegisterForm from "./component/RegisterForm/RegisterForm";
 import "./App.css";
@@ -12,9 +12,10 @@ import Landing from "./component/Landing/Landing";
 import WhatsBad from "./component/WhatsBad";
 import NewSection from "./component/NewSection";
 import OurSpeaker from "./component/OurSpeaker";
-import About from "./component/AboutUs/About";
+import AboutUs from "./component/AboutUs/About";
 import Team from "./component/team/Team";
 import Ticket from "./component/Ticket/Ticket";
+import About from "./component/About/About";
 
 function App() {
   useEffect(() => {
@@ -60,7 +61,9 @@ function App() {
       <Landing />
       <NewSection />
       <WhatsBad />
+      <WhatIsBad />
            
+            <AboutUs />
             <About />
             <Footer />
           </>

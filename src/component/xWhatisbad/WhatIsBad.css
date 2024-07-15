@@ -1,0 +1,137 @@
+/* Base Styles */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-right: 30px;
+  margin-top: 2rem;
+}
+
+.first, .second {
+  width: 100%;
+}
+
+.main_container {
+  margin-top: 2rem;
+}
+
+.image-main {
+  left: 50%;
+  top: 13%;
+  height: auto;
+  width: 80%;
+  max-width: 35rem;
+  transform: translateX(-50%);
+  border: 10px solid white;
+  margin: 0 auto;
+}
+
+.heading h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem; /* Base font size */
+}
+
+.img,
+.img2 {
+  height: 6rem;
+  width: auto;
+  max-width: 100%;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.info {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.info h2 {
+  color: rgb(228, 28, 28);
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Media Queries */
+
+/* Small screens */
+@media (min-width: 576px) {
+  .heading h1 {
+    font-size: 3rem; /* Adjusted font size for small screens */
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .first,
+  .second {
+    width: 45%;
+  }
+
+  .image {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .first img {
+    margin-right: 4rem;
+  }
+
+  .info {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .heading h1 {
+    font-size: 3.5rem; /* Adjusted font size for medium screens */
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .first,
+  .second {
+    width: 50%;
+  }
+
+  .image-main {
+    height: 25rem;
+    width: 35rem;
+    top: 10%;
+    left: 0;
+    transform: none;
+    margin: 0;
+  }
+
+  .heading h1 {
+    font-size: 4rem; /* Adjusted font size for large screens */
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1200px) {
+  .content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .heading h1 {
+    font-size: 4.5rem; /* Adjusted font size for extra large screens */
+  }
+}
