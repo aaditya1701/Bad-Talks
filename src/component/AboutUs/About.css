@@ -1,0 +1,120 @@
+/* About.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+.image:hover {
+  transform: scale(1.1); /* Example: Enlarge image on hover */
+}
+
+.AboutUsContainer {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease-out;
+}
+
+.AboutUsContainer h1 {
+  font-size: 3.5rem;
+}
+
+/* .font class without hover effect */
+.font {
+  font-weight: 900;
+  font-size: 40px;
+  background: #ff0000;
+  background: linear-gradient(to right, #ff0000 0%, #ffc100 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+  /* transition: font-size 0.3s ease-out, background-size 0.3s ease-out; */
+}
+
+/* .font class with hover effect */
+.font:hover {
+  background-size: 120%; /* Example: Expand background gradient on hover */
+}
+
+.AboutUsText {
+  text-align: justify;
+  transition: opacity 0.3s ease-out;
+  opacity: 0; /* Initially hidden */
+  font-size: 1.1rem;
+}
+
+.AboutUsInnerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.AboutUs {
+  display: grid;
+  align-items: center;
+  width: calc(50% - 20px);
+  margin: 10px;
+  transition: transform 0.3s ease-out;
+}
+
+.AboutUs:hover {
+  transform: translateY(-10px); /* Example: Lift element on hover */
+}
+
+.AboutUsHeading {
+  display: none;
+  text-align: left;
+  font-size: xx-large;
+  color: white;
+}
+
+@media (max-width: 728px) {
+  .AboutUs {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .AboutUsHeading {
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+  .AboutUs {
+    display: block;
+    align-items: center;
+    max-width: 492px;
+    margin: 10px;
+  }
+
+  .AboutUsInnerContainer {
+    justify-content: space-evenly;
+  }
+
+  .AboutUsRight {
+    margin-left: 20px;
+  }
+}
+
+/* Fade in effect on load */
+.AboutUsText.visible {
+  opacity: 1;
+  transition-delay: 0.3s; /* Delay the transition */
+}

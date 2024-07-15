@@ -1,0 +1,136 @@
+.event_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.event_details h1 {
+  margin: 0.2rem 0;
+  font-size: 3.8rem;
+}
+
+.breakdown {
+  margin-top: 0.5rem;
+}
+
+.event_details p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.event_details img {
+  margin: 1rem 0;
+  max-width: 50%;
+  border-radius: 1rem;
+  background: transparent;
+}
+
+.analysis {
+  color: rgba(255, 0, 43, 0.874);
+}
+
+.event_details h2 {
+  margin-top: 1rem;
+}
+
+.event_details p {
+  margin: 0.5rem 0;
+}
+
+.event_details button {
+  width: 9 rem;
+  height: 3rem;
+  border: none;
+  border-radius: 8px;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  box-shadow: 2px 3px 5px rgba(110, 57, 47, 0.164);
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease; /* Button hover animation */
+}
+
+/* .event_details button:hover {
+  background-color: darkred;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+} */
+
+.event_details button:active {
+  transform: scale(0.9);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1050px) {
+  .event_details {
+    padding: 0.8rem;
+  }
+
+  .event_details img {
+    max-width: 70%;
+  }
+
+  .event_details h1 {
+    font-size: 2.4rem;
+  }
+
+  .event_details h2 {
+    font-size: 1.8rem;
+  }
+
+  .event_details p {
+    font-size: 1.1rem;
+  }
+
+  .event_details button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .event_details {
+    padding: 0.5rem;
+  }
+
+  .event_details img {
+    max-width: 90%;
+  }
+
+  .event_details button {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    font-weight: 550;
+  }
+}
+
+@media (max-width: 480px) {
+  .event_details h1 {
+    font-size: 1.5rem;
+  }
+
+  .event_details h2 {
+    font-size: 1.2rem;
+  }
+
+  .event_details p {
+    font-size: 1rem;
+  }
+
+  .event_details img {
+    height: max(80vw);
+  }
+
+  .event_details button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}

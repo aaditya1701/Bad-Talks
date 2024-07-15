@@ -1,0 +1,204 @@
+* {
+  color: white;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0rem;
+  height: 4rem;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.Nav_left img {
+  height: 60px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.Nav_center {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.Nav_center a {
+  text-decoration: none;
+  opacity: 0.5;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  margin-right: 2.5rem;
+}
+
+.Nav_center a:hover {
+  opacity: 1;
+}
+
+.Nav_center a:active {
+  transform: scale(0.91);
+}
+
+/* .Nav_right button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: tomato;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+    margin-top: 0;
+} */
+
+/* .Nav_right button:hover {
+  background-color: darkred;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+} */
+
+.Nav_right button:active {
+  transform: scale(0.85);
+  transition: transform 0.1s ease;
+}
+
+.Nav_toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 2px 8px;
+  margin: 10px;
+  background: linear-gradient(
+    to right,
+    rgb(218, 88, 65),
+    rgba(179, 75, 18, 0.954)
+  );
+  color: white;
+  border: 1px solid rgb(117, 23, 7);
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+  display: none;
+}
+
+.Nav_toggler:hover {
+  background-color: rgb(148, 76, 64);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Nav_toggler:active {
+  transform: scale(0.91);
+  transition: transform 0.1s ease;
+}
+
+@media (max-width: 768px) {
+  .Nav_center {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #333;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 1;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+  .Nav_center.open {
+    max-height: 300px;
+    opacity: 1;
+    gap: 0;
+    background: linear-gradient(rgb(14, 13, 13), rgb(27, 25, 25));
+  }
+
+  .Nav_center a {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+    margin: 0 auto;
+  }
+
+  .Nav_right {
+    display: none;
+  }
+
+  .Nav_toggler {
+    display: block;
+  }
+}
+.register-button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(203, 20, 20);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.register-icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+.register-button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.register-button:hover .register-icon {
+  transform: translate(4px);
+}
+
+.register-button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+.register-button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}

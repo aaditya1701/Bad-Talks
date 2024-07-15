@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 90vh; */
+  
+}
+
+.register-form h2 {
+  font-size: 2.5rem;
+}
+
+.navUp{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.navUp p{
+  text-align: center;
+  margin-left: 6rem;
+  margin-top: -1rem;
+  font-size: 1.5rem;
+  opacity: .7;
+  cursor: pointer;
+}
+
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  /* margin-bottom: 20px; */
+}
+
+.inputBox input,
+select {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #999;
+  outline: none;
+  color: white;
+  letter-spacing: 0.15em;
+}
+
+.inputBox label {
+  position: absolute;
+  left: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  color: #999;
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+  border-bottom: 2px solid tomato;
+}
+
+button {
+  background: tomato;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* button:hover {
+  letter-spacing: 0.09em;
+} */
+
+.inputBox label span {
+  position: relative;
+  display: inline-flex;
+  letter-spacing: 0.05em;
+  transition: 0.3s ease-in-out;
+}
+
+.inputBox input:focus ~ label span,
+.inputBox input:valid ~ label span {
+  color: tomato;
+  letter-spacing: 0.15em;
+  transform: translateY(-25px);
+}
+
+.register-form form h2 {
+  margin-bottom: 3rem;
+  color: tomato;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  .inputBox input {
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .inputBox input:focus ~ label span,
+  .inputBox input:valid ~ label span {
+    color: tomato;
+    letter-spacing: 0.15em;
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 20px 10px;
+  }
+
+  .inputBox {
+    margin-bottom: 15px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.2rem;
+  }
+}
