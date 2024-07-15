@@ -14,6 +14,7 @@ const RegisterForm = ({Element})=> {
     year: "",
     why: "",
   });
+  const condition = formData.name !==  "" && formData.why !== "" && formData.collegeName !==  "" && formData.phone !==  "" && formData.email !==  "" && formData.year !==  ""
   const handleConfetti = () => {
     confetti({
       particleCount: 100,
@@ -27,7 +28,11 @@ const RegisterForm = ({Element})=> {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/ticket/shiv213")
+    // if(condition){
+    console.log('clicked')
+      navigate("/ticket/shiv213")
+
+    // }
     console.log("Form Data:", formData);
     // Implement logic to handle form submission (e.g., send data to backend)
   };
@@ -126,7 +131,7 @@ const RegisterForm = ({Element})=> {
         </div>
        <Element>
         <Button  onClick={handleConfetti} variant={'outline'} className='rounded-xl w-full mt-4 text-black' type="submit">Submit</Button>
-
+        {/* disabled={!condition} */}
        </Element>
           
        
