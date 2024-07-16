@@ -1,5 +1,5 @@
 import React from 'react'
-import './WhatisBad.css';
+import './WhatIsBad.css';
 import Img1 from '../../assets/bad-1.jpeg'
 import Img2 from '../../assets/bad-2.jpeg'
 import Img3 from '../../assets/bad-3.avif'
@@ -7,7 +7,7 @@ import Img4 from '../../assets/bad-4.jpg'
 
 const WhatisBad = () => {
   return (
-    <section className="whatisbad-section">
+    <section className="whatisbad-section pt-24">
         <div className="whatisbad-top">
             <h3 className='whatisbad-why-attend'>WHY ATTEND</h3>
             <h1 className="whatisbad-main-head">WHAT'S IN IT BAD FOR STUDENTS?</h1>

@@ -4,7 +4,7 @@ import video from "../../assets/video.mp4"
 
 export default function About() {
   return (
-    <section className="AboutUsContainer" id="About">
+    <section className="AboutUsContainer" id="about">
       <h1 className="font">About Event</h1>
       <div className="AboutUsInnerContainer">
         <div className="content">
@@ -30,7 +30,7 @@ export default function About() {
             </ul>
           </div>
         </div>
-        <div className="AboutUs">
+        <div className="AboutUs mt-12">
           <video width="560" height="315" controls autoPlay muted loop>
             <source src={video} type="video/mp4" />
             Your browser does not support the video tag.

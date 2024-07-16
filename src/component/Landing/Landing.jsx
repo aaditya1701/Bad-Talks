@@ -8,7 +8,7 @@ export default function Landing() {
     <>
  
     
-    <div id='home' className=' flex flex-col px-4 md:flex-row gap-12
+    <div id='home' className=' overflow-hidden flex flex-col px-4 md:flex-row gap-12
       items-center md:items-start md:justify-center justify-start  h-full md:h-[95vh] w-full relative '>
 
 <span className='text-white/10 text-9xl absolute top-[10%] left-36 font-extrabold'>
