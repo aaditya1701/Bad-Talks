@@ -1,9 +1,9 @@
 import React from 'react';
 import './WhatIsBad.css';
-import Img1 from '../../assets/bad-1.jpeg';
-import Img2 from '../../assets/bad-2.jpeg';
-import Img3 from '../../assets/bad-3.avif';
-import Img4 from '../../assets/bad-4.jpg';
+import Img1 from '../../assets/Whatis/bad-1.webp';
+import Img2 from '../../assets/Whatis/bad-2.webp';
+import Img3 from '../../assets/Whatis/bad-3.webp';
+import Img4 from '../../assets/Whatis/bad-4.webp';
 
 const WhatisBad = () => {
   return (

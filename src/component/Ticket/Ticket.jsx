@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Ticket.css";
-import logo from "./badtalks_linear_logo.png";
+// import logo from "./logo.webp";
 import { TicketCheck } from "lucide-react";
 import { useParams } from "react-router-dom";
 import {

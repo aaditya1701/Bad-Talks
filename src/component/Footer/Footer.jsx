@@ -1,10 +1,7 @@
-import {
-  Instagram,
-  MessageSquareCodeIcon,
-  MessageSquareHeartIcon,
-  MessageSquareOffIcon,
-  X,
-} from "lucide-react";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -33,31 +30,31 @@ export default function Footer() {
         </aside>
         <nav className="flex justify-between item-center gap-6">
           <Link
-            to="https://instagram.com/badtalksclub?igshid=YmMyMTA2M2Y="
+            to="https://www.instagram.com/bad.talks2024/"
             className="h-11 w-11 relative  rounded-xl group "
           >
             <div className="h-full w-full absolute  group-hover:bg-white/40 group-hover:backdrop-blur-sm transition-all duration-300 rounded-xl z-10 flex items-center justify-center">
-              <Instagram />
+              <FaInstagram className="text-2xl" />
             </div>
             <div className="h-full w-full  rounded-xl absolute transition-all duration-300 bg-gradient-to-tr from-orange-500 to-pink-500 group-hover:rotate-[35deg] origin-bottom  "></div>
           </Link>
 
           <Link
-            to="https://instagram.com/badtalksclub?igshid=YmMyMTA2M2Y="
+            to="https://chat.whatsapp.com/FYzPkqLqZ9v0vzBLSnuBm6"
             className="h-11 w-11 relative  rounded-xl group "
           >
             <div className="h-full w-full absolute  group-hover:bg-white/40 group-hover:backdrop-blur-sm transition-all duration-300 rounded-xl z-10 flex items-center justify-center">
-              <MessageSquareHeartIcon />
+              <FaWhatsapp className="text-2xl" />
             </div>
             <div className="h-full w-full  rounded-xl absolute transition-all duration-300 bg-gradient-to-tr from-orange-500 to-pink-500 group-hover:rotate-[35deg] origin-bottom  "></div>
           </Link>
 
           <Link
-            to="https://instagram.com/badtalksclub?igshid=YmMyMTA2M2Y="
+            to="/"
             className="h-11 w-11 relative  rounded-xl group "
           >
             <div className="h-full w-full absolute  group-hover:bg-white/40 group-hover:backdrop-blur-sm transition-all duration-300 rounded-xl z-10 flex items-center justify-center">
-              <X />
+              <BsTwitterX className="text-xl" />
             </div>
             <div className="h-full w-full  rounded-xl absolute transition-all duration-300 bg-gradient-to-tr from-orange-500 to-pink-500 group-hover:rotate-[35deg] origin-bottom  "></div>
           </Link>

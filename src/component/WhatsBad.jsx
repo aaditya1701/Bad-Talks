@@ -1,5 +1,5 @@
 import React from 'react'
-import event from '../assets/bad_taks_front_page.png'
+import event from '../assets/front.webp'
 import B from '../assets/B.png'
 import A from '../assets/A.png'
 import D from '../assets/D.png'

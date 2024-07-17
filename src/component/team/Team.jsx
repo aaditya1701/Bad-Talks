@@ -4,50 +4,50 @@ import './Team.css';
 
 
 // Lead
-import Aniket from "../../assets/Lead/Aniket.jpg";
-import deeksha from "../../assets/Lead/deeksha.png"
-import Devesh from "../../assets/Lead/Devesh.jpg"
-import Anant from "../../assets/Lead/Anant.jpg"
+import Aniket from "../../assets/Teams/Lead/Aniket.webp";
+import deeksha from "../../assets/Teams/Lead/deeksha.webp"
+import Devesh from "../../assets/Teams/Lead/Devesh.webp"
+import Anant from "../../assets/Teams/Lead/Anant.webp"
 // Tech 
-import BharatKhatwani from "../../assets/Tech/Bharat.jpg"
-import Bharat from "../../assets/Tech/Bharat.jpg"
-import Ravi from "../../assets/Tech/Ravi.jpg"
-import Shivanshi from "../../assets/Tech/Shivanshi.jpg"
-import Palak from "../../assets/Tech/Palak.jpg"
-import Ananya from "../../assets/Tech/Ananya.jpg"
+import BharatKhatwani from "../../assets/Teams/Tech/Bharat.webp"
+import Bharat from "../../assets/Teams/Tech/Bharat.webp"
+import Ravi from "../../assets/Teams/Tech/Ravi.webp"
+import Shivanshi from "../../assets/Teams/Tech/Shivanshi.webp"
+import Palak from "../../assets/Teams/Tech/Palak.webp"
+import Ananya from "../../assets/Teams/Tech/Ananya.webp"
 
 
 
 //Management
-import Sakshi from "../../assets/Management/Sakshi.jpg"
-import Ashley from "../../assets/Management/Ashley.jpg"
-import Shreya from "../../assets/Management/Shreya.jpg"
-import Shrishti from "../../assets/Management/Shrishti.jpg"
-import Shubh from "../../assets/Management/Shubh.jpg"
-import Tanisha from "../../assets/Management/Tanisha.jpg"
+import Sakshi from "../../assets/Teams/Management/Sakshi.webp"
+import Ashley from "../../assets/Teams/Management/Ashley.webp"
+import Shreya from "../../assets/Teams/Management/Shreya.webp"
+import Shrishti from "../../assets/Teams/Management/Shrishti.webp"
+import Shubh from "../../assets/Teams/Management/Shubh.webp"
+import Tanisha from "../../assets/Teams/Management/Tanisha.webp"
 
 // Curation
-import Aditya from "../../assets/Curation/Aditya.jpg"
-import Khushi from "../../assets/Curation/Khushi.jpg"
-import Soumya from "../../assets/Curation/Soumya.jpg"
-import Bhuvneshwari from "../../assets/Curation/Bhuvneshwari.jpg"
-import Anushka from "../../assets/Curation/AnushkaM.jpg"
-import Vishal from "../../assets/Curation/Vishal.jpg"
+import Aditya from "../../assets/Teams/Curation/Aditya.webp"
+import Khushi from "../../assets/Teams/Curation/Khushi.webp"
+import Soumya from "../../assets/Teams/Curation/Soumya.webp"
+import Bhuvneshwari from "../../assets/Teams/Curation/Bhuvneshwari.webp"
+import Anushka from "../../assets/Teams/Curation/AnushkaM.webp"
+import Vishal from "../../assets/Teams/Curation/Vishal.webp"
 
 // Design
-import Aadeesh from "../../assets/Design_Video/Aadeesh.jpg";
-import Anjali from "../../assets/Design_Video/Anjali.jpg";
-import Meet from "../../assets/Design_Video/Meet.jpg";
-import jeny from "../../assets/Design_Video/Jeny.jpg";
-import tanishq from "../../assets/Design_Video/tanishq.png"
-import hardik from "../../assets/Design_Video/Hardik.jpg"
+import Aadeesh from "../../assets/Teams/Design/Aadeesh.webp";
+import Anjali from "../../assets/Teams/Design/Anjali.webp";
+import Meet from "../../assets/Teams/Design/Meet.webp";
+import jeny from "../../assets/Teams/Design/Jeny.webp";
+import tanishq from "../../assets/Teams/Design/tanishq.webp"
+import hardik from "../../assets/Teams/Design/Hardik.webp"
 
 // Social Media 
-import Sonali from "../../assets/Social/SONALI.jpg"
-import devanshi from "../../assets/Social/Devanshi.jpg"
-import sanjeet from "../../assets/Social/Sanjeet.jpg"
-import savan from "../../assets/Social/Savan.jpg"
-import Paridhi from "../../assets/Social/Paridhi Mandloi.jpg"
+import Sonali from "../../assets/Teams/Social/SONALI.webp"
+import devanshi from "../../assets/Teams/Social/Devanshi.webp"
+import sanjeet from "../../assets/Teams/Social/Sanjeet.webp"
+import savan from "../../assets/Teams/Social/Savan.webp"
+import Paridhi from "../../assets/Teams/Social/Paridhi.webp"
 
 
 const teamData = {
@@ -91,7 +91,7 @@ const teamData = {
     { name: 'Jeny Jain', img: jeny },
     { name: 'Hardik Saini', img: hardik }
   ],
-  Social_Media: [
+  Social: [
     { name: 'Sonali Singh', img: Sonali },
     { name: 'Savan Lovanshi', img: savan },
     { name: 'Devanshi Neema', img: devanshi },

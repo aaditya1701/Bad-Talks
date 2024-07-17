@@ -1,10 +1,10 @@
 import React from "react";
-import dhir from "../assets/DhirendraSingh.jpg";
-import rounak from "../assets/ROUNAK.jpg";
-import ceo1 from "../assets/ceo1.jpg";
-import ceo3 from "../assets/ceo3.jpg";
-import ceo4 from "../assets/ceo4.jpg";
-import ceo5 from "../assets/ceo5.jpg";
+import ceo1 from "../assets/Speakers/ceo1.webp";
+import ceo2 from "../assets/Speakers/ceo2.webp";
+import ceo3 from "../assets/Speakers/ceo3.webp";
+import ceo4 from "../assets/Speakers/ceo4.webp";
+import ceo5 from "../assets/Speakers/ceo5.webp";
+import ceo6 from "../assets/Speakers/ceo6.webp";
 
 export default function OurSpeaker() {
   return (
@@ -50,7 +50,7 @@ export default function OurSpeaker() {
         </div>
         <div className="lg:w-1/3 flex justify-center lg:justify-end">
           <img
-            src={dhir}
+            src={ceo6}
             alt="Dhirendra Singh"
             className="h-full max-h-96 w-auto"
           />
@@ -82,7 +82,7 @@ export default function OurSpeaker() {
         </div>
         <div className="lg:w-1/3 flex justify-center lg:justify-end">
           <img
-            src={rounak}
+            src={ceo2}
             alt="Raunak Anand"
             className="h-full max-h-96 w-auto"
           />

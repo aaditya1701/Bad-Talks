@@ -1,6 +1,6 @@
 import {  ArrowRight, ChevronDown,  Link2, Loader2 } from 'lucide-react'
 import React from 'react'
-import event from "../../assets/bad_taks_front_page.png"
+import event from "../../assets/front.webp"
 import { useNavigate } from 'react-router-dom'
 export default function Landing() {
   const navigate = useNavigate()

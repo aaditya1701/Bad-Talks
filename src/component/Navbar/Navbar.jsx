@@ -20,7 +20,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import logo from "../../assets/BAD_TALKS_LOGO.png";
+import logo from "../../assets/logo.webp";
 import RegisterForm from "../RegisterForm/RegisterForm";
 import confetti from "canvas-confetti";
 import { Button } from "@/components/ui/button";
@@ -62,14 +62,14 @@ function Navbar() {
           href="/speakers"
           className="text-white font-semibold hover:text-red-600"
         >
-          Our Speakers
+          Speakers
         </a>
         
         <a
           href="/ourteam"
           className="text-white font-semibold hover:text-red-600"
         >
-          Our Team
+          Team
         </a>
         <a
           href="/#footer"
@@ -136,7 +136,7 @@ function Navbar() {
                 href="/speakers"
                 className="text-white text-2xl font-semibold hover:text-red-600"
               >
-                Our Speakers
+                Speakers
               </a>
               </SheetClose>
               <SheetClose asChild>
@@ -152,7 +152,7 @@ function Navbar() {
                 href="/ourteam"
                 className="text-white text-2xl font-semibold hover:text-red-600"
               >
-                Our Team
+                Team
               </a>
               </SheetClose>
               <SheetClose asChild>
