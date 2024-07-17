@@ -29,13 +29,15 @@ TALK
 
 <div className='md:absolute md:bottom-44  md:left-4  lg:left-24 h-40 w-full md:w-96 '>
 <ArrowRight  size={50} className=' -rotate-45'/>
-<h3 className='pl-3 font-semibold text-xl'>Venue :</h3>
-<p className=' max-w-xs lg:max-w-md pl-3 text-sm text-white/40'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet cupiditate ducimus magni praesentium beatae asperiores perspiciatis magnam unde nam adipisci, suscipit labore autem.</p>
+<h3 className='pl-3 font-semibold text-xl'>Venue :   Audi-2, IPS Academy <br /> Rajendra  Nagar, Indore, Madhya Pradesh, 452012 </h3>
 </div>
 {/* card */}
 <div className='h-full md:h-32  p-4 mb-40 md:mb-0 w-full md:w-96 bg-white rounded-3xl md:absolute relative  md:right-4  lg:right-24 md:bottom-44 '>
     <h3 className='text-black font-semibold text-xl'>Welcome...</h3>
-    <p className='text-black/40 text-xs md:max-w-[310px] mt-1 leading-tight max-w-[230px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus, commodi consequuntur placeat consequatur iusto maxime dolore laudantium illo reprehenderit labore praesentium distinctio.</p>
+    <p className='text-black/40 md:max-w-[310px] mt-2 text-lg font-medium leading-tight max-w-[230px]'>JOIN US FOR AN UNFORGETTABLE EVENT </p>
+    {/* margin-top: 1em;
+        font-size: 16px;
+        font-weight: 500; */}
     <div className="absolute h-16  w-16 bottom-0 rounded-tl-[30px] -right-4 flex items-center justify-center bg-black">
         <Link2 size={44} color='black' className='bg-white p-3 rounded-full mt-1' />
         <div className='h-4 w-4 bg-black  bottom-0  absolute -left-4 '>

@@ -64,9 +64,9 @@ function App() {
         <Route path="/" element={
           <>
             <Landing />
-            <NewSection />
             <WhatisBad/>
             <About />
+            <NewSection />
             <Footer />
           </>
         } />

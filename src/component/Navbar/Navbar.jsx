@@ -49,6 +49,9 @@ function Navbar() {
         >
           Home
         </a>
+        <a href="/#why-attend" className="text-white font-semibold hover:text-red-600">
+          Why Attend?
+        </a>
         <a
           href="/#about"
           className="text-white font-semibold hover:text-red-600"
@@ -61,9 +64,7 @@ function Navbar() {
         >
           Our Speakers
         </a>
-        <a href="/#bad" className="text-white font-semibold hover:text-red-600">
-          b.a.d?
-        </a>
+        
         <a
           href="/ourteam"
           className="text-white font-semibold hover:text-red-600"

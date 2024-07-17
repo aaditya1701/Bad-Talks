@@ -100,8 +100,8 @@ body {
   .AboutUs {
     display: block;
     align-items: center;
-    max-width: 492px;
-    margin: 10px;
+    max-width: 600px;
+    margin: 10px 10px 10px 0;
   }
 
   .AboutUsInnerContainer {
