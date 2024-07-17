@@ -16,9 +16,7 @@ const Map = () => {
                 max-width: none !important;
                 background: none !important;
             }
-            img {
-                max-width: none;
-            }
+            
             `}</style>
         </div>
     )
