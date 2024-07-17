@@ -26,15 +26,15 @@ const WhatisBad = () => {
       <div className="whatisbad-image-container">
         <div className="whatisbad-image">
           <img src={Img1} alt="Image 1" className="whatisbad-circle" />
-          <p className="whatisbad-desc">INTERNSHIP OPPORTUNITIES</p>
+          <p className="whatisbad-desc">Internship Opportunities</p>
         </div>
         <div className="whatisbad-image">
           <img src={Img2} alt="Image 2" className="whatisbad-circle" />
-          <p className="whatisbad--desc">GAIN REAL-TIME INDUSTRY INSIGHTS</p>
+          <p className="whatisbad--desc">Gain Realtime Industry Insights</p>
         </div>
         <div className="whatisbad-image">
           <img src={Img3} alt="Image 3" className="whatisbad-circle" />
-          <p className="whatisbad-desc">ENJOY REFRESHMENTS</p>
+          <p className="whatisbad-desc">Networking Opportunities</p>
         </div>
         <div className="whatisbad-image">
           <img src={Img4} alt="Image 4" className="whatisbad-circle" />

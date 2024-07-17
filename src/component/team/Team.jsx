@@ -8,6 +8,7 @@ import Aniket from "../../assets/Teams/Lead/Aniket.webp";
 import deeksha from "../../assets/Teams/Lead/deeksha.webp"
 import Devesh from "../../assets/Teams/Lead/Devesh.webp"
 import Anant from "../../assets/Teams/Lead/Anant.webp"
+import Parag from "../../assets/Teams/Lead/parag.webp"
 // Tech 
 import BharatKhatwani from "../../assets/Teams/Tech/Bharat.webp"
 import Bharat from "../../assets/Teams/Tech/Bharat.webp"
@@ -54,17 +55,16 @@ const teamData = {
   Lead: [
     { name: 'Anant Pawar', img: Anant },
     { name: 'Aniket Singh', img: Aniket },
-    { name: 'Deeksha Jain', img: deeksha },
-    { name: 'Parag Agarwal', img: BharatKhatwani },
-    { name: 'Devesh Gurjar', img: Devesh }
+    { name: 'Parag Agrawal', img: Parag },
+    { name: 'Devesh Gurjar', img: Devesh },
+    { name: 'Deeksha Jain', img: deeksha }
   ],
   Tech: [
     { name: 'Bharat Khatwani', img: BharatKhatwani },
     { name: 'Shivanshi Gupta', img: Shivanshi },
     { name: 'Ravi Gautam', img: Ravi },
     { name: 'Palak Jaiswal', img: Palak },
-    { name: 'Ananya Gupta', img:  Ananya},
-    { name: 'Other', img: Bharat }
+    { name: 'Ananya Gupta', img:  Ananya}
   ],
   Curation: [
     { name: 'Aditya Kumar Joshi', img: Aditya },

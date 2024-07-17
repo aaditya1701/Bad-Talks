@@ -3,7 +3,7 @@ import { Navigate, useNavigate, useNavigation } from "react-router-dom";
 import "./RegisterForm.css";
 import { Button } from "../../components/ui/button";
 import confetti from "canvas-confetti";
-import { addDoc, collection, doc, getDocs, setDoc,where ,query} from "firebase/firestore";
+import { addDoc, collection, doc, getDocs, setDoc, where, query } from "firebase/firestore";
 import { db } from "../../firebase";
 import sendEmail from "@/sendEmail";
 
@@ -23,7 +23,8 @@ const RegisterForm = ({ Element }) => {
     formData.collegeName !== "" &&
     formData.phone !== "" &&
     formData.email !== "" &&
-    formData.year !== "";
+    formData.year !== "" &&
+    formData.phone.length == 10;
 
   const handleConfetti = () => {
     confetti({
@@ -32,50 +33,46 @@ const RegisterForm = ({ Element }) => {
       origin: { y: 0.6 },
     });
   };
+
   const generateTicketID = (name) => {
-
-    // Extract the first 4 letters of the name (assuming the name is at least 4 characters long)
     const initials = name.toUpperCase();
-
-    // Concatenate the random digits and initials to form the ticket ID
     const ticketID = `${initials}`;
-
     return ticketID;
   };
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
   const getUserDataByEmail = async (email) => {
     try {
-     
       const userCollectionRef = collection(db, "users");
-  
       const querySnapshot = await getDocs(query(userCollectionRef, where("email", "==", email)));
-  
+
       if (querySnapshot.empty) {
         console.log("No user found with this email.");
         return null;
       }
-  
+
       const userData = querySnapshot.docs[0].data();
       return userData;
     } catch (error) {
       console.error("Error fetching user data:", error);
+      alert(error)
       return null;
     }
   };
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const userCollectionRef = collection(db, "users");
-  
       const existingUserQuery = query(userCollectionRef, where("email", "==", formData.email));
       const existingUserSnapshot = await getDocs(existingUserQuery);
-  
+
       if (!existingUserSnapshot.empty) {
         console.error("Email already registered");
+        alert("This email is already registered. Please use a different email address.");
         return;
       }
 
@@ -90,19 +87,20 @@ const RegisterForm = ({ Element }) => {
         ticketId: ticketId,
       });
 
-      const userDaata = await getUserDataByEmail( formData.email)
-      console.log(userDaata)
-      if(userDaata.ticketId){
+      const userDaata = await getUserDataByEmail(formData.email);
+      console.log(userDaata);
+      if (userDaata.ticketId) {
         handleConfetti();
         sendEmail({ ...formData, ticketId: userDaata.ticketId });
         console.log("User created successfully!");
+        alert("Congatulations! You have registered for the event.");
         navigate(`/ticket/${userDaata.ticketId}`);
       }
     } catch (error) {
       console.error("Error creating user:", error);
     }
   };
-  
+
   useEffect(() => {
     document.querySelectorAll("label").forEach((label) => {
       label.innerHTML = label.innerText
@@ -154,7 +152,7 @@ const RegisterForm = ({ Element }) => {
 
       <div className="inputBox">
         <input
-          type="tel"
+          type="number"
           id="phone"
           name="phone"
           value={formData.phone}
@@ -209,12 +207,11 @@ const RegisterForm = ({ Element }) => {
           required
         />
         <label htmlFor="why" className="text-xs md:text-sm lg:text-base">
-          Why &nbsp;do&nbsp; you&nbsp; want&nbsp; to&nbsp; register?
+          Why &nbsp; to &nbsp; register?
         </label>
       </div>
       <Element>
         <Button
-         
           variant={"outline"}
           className="rounded-xl w-full mt-4 text-black"
           type="submit"
