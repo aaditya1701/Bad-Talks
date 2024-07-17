@@ -18,18 +18,30 @@ export default function About() {
         Your browser does not support the video tag.
       </video>
       </div>
-      <div className='flex justify-between items-center '>
+      <div className='flex justify-between items-center text-xs md:text-lg'>
         <article className='flex-1 p-6 space-y-4' >
-          <p className='break'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim laborum quia illum repudiandae suscipit repellendus a aliquid, asperiores facere quos, ducimus corrupti voluptatum velit accusantium dolorum dolores temporibus molestias. Quo labore ab necessitatibus natus voluptates voluptatem adipisci. Reprehenderit commodi, sapiente asperiores cumque placeat numquam! Ad quas culpa repudiandae, velit alias doloribus iure, quia, atque totam accusamus provident ullam molestiae consectetur!</p>
+          
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quasi blanditiis eum quod dolore ut illum rem at mollitia facilis!</p>
         </article>
 
         <article className='flex-1 p-6  space-y-4'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim laborum quia illum repudiandae suscipit repellendus a aliquid, asperiores facere quos, ducimus corrupti voluptatum velit accusantium dolorum dolores temporibus molestias. Quo labore ab necessitatibus natus voluptates voluptatem adipisci. Reprehenderit commodi, sapiente asperiores cumque placeat numquam! Ad quas culpa repudiandae, velit alias doloribus iure, quia, atque totam accusamus provident ullam molestiae consectetur!</p>
+          
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti quasi blanditiis eum quod dolore ut illum rem at mollitia facilis!</p>
         </article>
-       
+      </div>
 
+      <div className='flex justify-between items-center text-xs md:text-base'>
+        <ul className='flex-1 p-6 space-y-4 list-disc list-inside'>
+          <li className='text-red-500'>Engaging talks from 7 industry leaders</li>
+          <li>Entrepreneurship, partnership, and business strategies</li>
+          <li className='text-red-500'>Network opportunities on business strategies</li>
+        </ul>
+        <ul className='flex-1 p-6 space-y-4 list-disc list-inside'>
+          <li className='text-red-500'>Insights from elite panels</li>
+          <li>Expos, Q&A aspects</li>
+          <li className='text-red-500'>Explosive Q&A summaries</li>
+          <li>Actionable takeaways for your business</li>
+        </ul>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./EventDetails.css";
-import event from "../../assets/front.webp"
+import event from "../../assets/front.png"
 
 function EventDetails() {
   const navigate = useNavigate();

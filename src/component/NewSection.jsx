@@ -4,8 +4,8 @@ import React from 'react'
 export default function NewSection() {
   return (
     <main className='h-full md:h-[85vh] mt-3 w-full flex flex-col justify-between gap-12 p-4 lg:p-16' id="bad">
-        <article className='flex text-sm flex-col gap-8 ml-32'>
-            <div className='flex flex-col gap-8'>
+        <article className='flex text-sm flex-col gap-8 lg:ml-32 md:ml-32'>
+            <div className='flex flex-col gap-8 text-center md:text-left'>
             <h3 className='text-white font-bold text-4xl '>Calling all Visionaries and Change-makers! </h3>
     {/* <p className='text-white/60 max-w-3xl'>Dive into the electrifying world of B.A.D. Talks, where innovation meets inspiration.</p> */}
     <p className='text-white/60 max-w-xl'>

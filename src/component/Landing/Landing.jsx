@@ -1,6 +1,6 @@
 import {  ArrowRight, ChevronDown,  Link2, Loader2 } from 'lucide-react'
 import React from 'react'
-import event from "../../assets/front.webp"
+import event from "../../assets/front.png"
 import { useNavigate } from 'react-router-dom'
 
 import {
