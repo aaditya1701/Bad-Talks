@@ -2,6 +2,19 @@ import {  ArrowRight, ChevronDown,  Link2, Loader2 } from 'lucide-react'
 import React from 'react'
 import event from "../../assets/front.webp"
 import { useNavigate } from 'react-router-dom'
+
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogClose,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import RegisterForm from "../RegisterForm/RegisterForm";
+
+
 export default function Landing() {
   const navigate = useNavigate()
   return (
@@ -23,6 +36,36 @@ TALK
 <span className='h-[1px] w-24 bg-white absolute -top-4 -right-6'></span>
 <img src={event} alt="Event"  className='h-[96] w-auto absolute'/>
 <span className='h-[1px] w-24 bg-white absolute -bottom-4 -left-6'></span>
+
+{/* <div className="Nav_right" style="
+    margin-top: 25em;
+    margin-left: 7em;"> */}
+<div className="Nav_right" style={{marginTop: "25em", marginLeft:"7em"}}>
+        <Dialog>
+          <DialogTrigger>
+            <div className="register-button" style={{paddingBlock: "0.8rem", paddingInline: "5.25rem"}}>
+              Apply Now
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                className="register-icon"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </DialogTrigger>
+          <DialogContent className="bg-black/10 px-4 md:px-24 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center">
+            <DialogTitle className="text-red-600 font-semibold text-3xl py-4">
+              Register
+            </DialogTitle>
+            <RegisterForm Element={DialogClose} />
+          </DialogContent>
+        </Dialog>
+      </div>
 
 </div>
 
