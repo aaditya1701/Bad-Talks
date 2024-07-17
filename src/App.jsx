@@ -63,6 +63,7 @@ function App() {
           <>
             <Landing />
             <WhatisBad/>
+            
             <AboutUs />
             <NewSection />
             <Map />

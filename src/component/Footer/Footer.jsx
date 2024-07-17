@@ -44,9 +44,9 @@ export default function Footer() {
             className="h-11 w-11 relative  rounded-xl group "
           >
             <div className="h-full w-full absolute  group-hover:bg-white/40 group-hover:backdrop-blur-sm transition-all duration-300 rounded-xl z-10 flex items-center justify-center">
-              <FaWhatsapp className="text-2xl" />
+              <FaWhatsapp  className="text-2xl" />
             </div>
-            <div className="h-full w-full  rounded-xl absolute transition-all duration-300 bg-gradient-to-tr from-orange-500 to-pink-500 group-hover:rotate-[35deg] origin-bottom  "></div>
+            <div className="h-full w-full  rounded-xl absolute transition-all duration-300 bg-gradient-to-tr from-green-500 to-green-700 group-hover:rotate-[35deg] origin-bottom  "></div>
           </Link>
 
           <Link
@@ -54,13 +54,13 @@ export default function Footer() {
             className="h-11 w-11 relative  rounded-xl group "
           >
             <div className="h-full w-full absolute  group-hover:bg-white/40 group-hover:backdrop-blur-sm transition-all duration-300 rounded-xl z-10 flex items-center justify-center">
-              <BsTwitterX className="text-xl" />
+              <BsTwitterX  className="text-xl" />
             </div>
-            <div className="h-full w-full  rounded-xl absolute transition-all duration-300 bg-gradient-to-tr from-orange-500 to-pink-500 group-hover:rotate-[35deg] origin-bottom  "></div>
+            <div className="h-full w-full  rounded-xl absolute transition-all duration-300 bg-gradient-to-tr from-neutral-800 to-neutral-700 group-hover:rotate-[35deg] origin-bottom  "></div>
           </Link>
         </nav>
       </div>
-      <p className="text-center  ">Made with ❤️ by B.A.D. Talks Team</p>
+      <p className="text-center  ">Made with ❤️ by B.A.D. Talks Tech Team</p>
     </footer>
   );
 }

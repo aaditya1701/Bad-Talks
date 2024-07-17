@@ -65,14 +65,16 @@
       --ring: 0 0% 83.1%;
     }
   }
-
+body{
+  font-family: "Nunito", sans-serif;
+  background-color: black;
+  scroll-behavior: smooth;
+}
   @layer base {
     * {
       @apply border-border;
     }
-    body {
-      @apply bg-background text-foreground;
-    }
+  
     .no-scrollbar::-webkit-scrollbar {
       display: none;
   }

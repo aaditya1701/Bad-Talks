@@ -1,11 +1,12 @@
 .whatisbad-section {
     padding: 0 1em;
-    background-color: white;
+    background-color: #000;
     min-height: 85vh;
+    font-family: "Nunito", sans-serif;
 }
 
 .whatisbad-why-attend {
-    color: red;
+    color:white;
 }
 
 .whatisbad-image-container {
@@ -45,9 +46,11 @@ hr {
 }
 
 .whatisbad-separator-line {
-    color: red;
+    color: white;
     display: inline-block;
-    margin: 0;
+  
+    font-size: 1.5rem;
+    margin-top:32px ;
 }
 
 .whatisbad-top {
@@ -56,7 +59,7 @@ hr {
 }
 
 .whatisbad-desc {
-    color: black;
+    color: white;
     font-size: 14px;
     padding-left: 48px;
     padding-right: 48px;
@@ -66,13 +69,14 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 20px 0; */
+     margin: 20px 0; 
 }
 
 .whatisbad-main-head {
-    color: black;
-    font-size: 2.5rem;
+    color: white;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    margin-top: 24px;
 }
 
 @media (max-width: 1024px) {

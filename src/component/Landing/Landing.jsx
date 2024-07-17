@@ -24,26 +24,28 @@ export default function Landing() {
     <div id='home' className=' overflow-hidden flex flex-col px-4 md:flex-row gap-12
       items-center md:items-start md:justify-center justify-start  h-full md:h-[95vh] w-full relative '>
 
-<span className='text-white/10 text-9xl absolute top-[10%] left-36 font-extrabold'>
+<span className='text-white/10 text-9xl hidden md:block absolute top-[10%] left-36 font-extrabold'>
 BAD 
 
 </span>
-<span className='text-white/10 text-9xl absolute top-1/3 right-24 font-extrabold'>
+<span className='text-white/10 text-9xl hidden md:block   absolute top-1/3 right-24 font-extrabold'>
 TALK
 
 </span>
-<div className='w-full mx-auto md:h-72 md:w-auto aspect-video relative mt-24'>
+<div className='flex flex-col gap-2 w-full'>
+<div className='w-full mx-auto md:h-80 md:w-auto aspect-video relative mt-24 '>
 <span className='h-[1px] w-24 bg-white absolute -top-4 -right-6'></span>
-<img src={event} alt="Event"  className='h-[96] w-auto absolute'/>
+<img src={event} alt="Event"  className='h-full w-auto absolute'/>
 <span className='h-[1px] w-24 bg-white absolute -bottom-4 -left-6'></span>
 
 {/* <div className="Nav_right" style="
     margin-top: 25em;
     margin-left: 7em;"> */}
-<div className="Nav_right" style={{marginTop: "25em", marginLeft:"7em"}}>
+    </div>
+<div className=" flex items-center justify-center mt-6 md:mt-0" >
         <Dialog>
-          <DialogTrigger>
-            <div className="register-button" style={{paddingBlock: "0.8rem", paddingInline: "5.25rem"}}>
+          <DialogTrigger >
+            <div className="register-button self-center " >
               Apply Now
               <svg
                 fill="currentColor"
@@ -66,8 +68,9 @@ TALK
           </DialogContent>
         </Dialog>
       </div>
-
+     
 </div>
+
 
 
 <div className='md:absolute md:bottom-44  md:left-4  lg:left-24 h-40 w-full md:w-96 '>
@@ -82,7 +85,9 @@ TALK
         font-size: 16px;
         font-weight: 500; */}
     <div className="absolute h-16  w-16 bottom-0 rounded-tl-[30px] -right-4 flex items-center justify-center bg-black">
+      <a href='/speakers'> 
         <Link2 size={44} color='black' className='bg-white p-3 rounded-full mt-1' />
+      </a>
         <div className='h-4 w-4 bg-black  bottom-0  absolute -left-4 '>
         <div className='h-4 w-4 bg-white rounded-br-3xl  absolute -left-0 bottom-0 '>
 
@@ -103,7 +108,7 @@ TALK
         <div className='absolute bottom-0 h-24 w-full bg-white  left-0 right-0'>
             <div className='relative h-full w-full'>
                 <div className='h-24 absolute w-24 rounded-full bg-black  -top-1/2 right-1/2 translate-x-1/2'>
-                <a href='#whatisbad' className='absolute border-2 border-white cursor-pointer z-40 rounded-2xl flex items-center h-12 top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2'>
+                <a href='#why-attend' className='absolute border-2 border-white cursor-pointer z-40 rounded-2xl flex items-center h-12 top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2'>
                     <ChevronDown size={30} className='animate-bounce duration-1000 '/>
                 </a>
                 <div className='relative h-full w-full'>
