@@ -17,9 +17,7 @@ import Team from "./component/team/Team";
 import Ticket from "./component/Ticket/Ticket";
 import About from "./component/About/About";
 import WhatisBad from "./component/Whatisbad/WhatIsBad";
-
-
-
+import Map from "./component/Map";
 
 
 function App() {
@@ -67,6 +65,7 @@ function App() {
             <WhatisBad/>
             <About />
             <NewSection />
+            <Map />
             <Footer />
           </>
         } />
