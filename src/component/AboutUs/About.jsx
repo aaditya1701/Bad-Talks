@@ -2,7 +2,7 @@ import React from 'react'
 import video from "../../assets/video.mp4"
 export default function About() {
   return (
-    <div className='space-y-6 max-w-7xl mx-auto px-8 py-12'>
+    <div className='space-y-6 max-w-7xl mx-auto px-8 py-12' id="about">
     <div className='flex items-center justify-center flex-col gap-4' >
     <div className='relative w-fit mx-auto'>
             <span className='h-[1px] w-36 bg-white absolute -bottom-2 -right-9'/>

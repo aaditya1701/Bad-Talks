@@ -31,7 +31,6 @@ import Tanisha from "../../assets/Teams/Management/Tanisha.webp"
 import Aditya from "../../assets/Teams/Curation/Aditya.webp"
 import Khushi from "../../assets/Teams/Curation/Khushi.webp"
 import Soumya from "../../assets/Teams/Curation/Soumya.webp"
-import Bhuvneshwari from "../../assets/Teams/Curation/Bhuvneshwari.webp"
 import Anushka from "../../assets/Teams/Curation/AnushkaM.webp"
 import Vishal from "../../assets/Teams/Curation/Vishal.webp"
 
@@ -70,7 +69,6 @@ const teamData = {
     { name: 'Aditya Kumar Joshi', img: Aditya },
     { name: 'Khushi Nikam', img: Khushi },
     { name: 'Somya Kinkar', img: Soumya },
-    { name: 'Bhuvneshwari Batham', img: Bhuvneshwari },
     { name: 'Vishal Kumar', img: Vishal },
     { name: 'Anushka Meena', img: Anushka  }
   ],

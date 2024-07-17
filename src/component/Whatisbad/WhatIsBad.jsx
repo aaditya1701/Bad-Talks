@@ -33,7 +33,7 @@ const WhatisBad = () => {
           <p className="whatisbad--desc">Gain Realtime Industry Insights</p>
         </div>
         <div className="whatisbad-image">
-          <img src={Img3} alt="Image 3" className="whatisbad-circle" />
+          <img src={Img1} alt="Image 3" className="whatisbad-circle" />
           <p className="whatisbad-desc">Networking Opportunities</p>
         </div>
         <div className="whatisbad-image">

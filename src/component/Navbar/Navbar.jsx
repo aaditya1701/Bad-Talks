@@ -83,7 +83,7 @@ function Navbar() {
         <Dialog>
           <DialogTrigger>
             <div className="register-button">
-              Apply Now
+              RSVP Now
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"
@@ -168,7 +168,7 @@ function Navbar() {
 
               <SheetClose asChild>
               <div className="register-button">
-              Apply Now
+              RSVP Now
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"

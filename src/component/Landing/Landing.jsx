@@ -46,7 +46,7 @@ TALK
         <Dialog>
           <DialogTrigger >
             <div className="register-button self-center " >
-              Apply Now
+              RSVP Now
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"
