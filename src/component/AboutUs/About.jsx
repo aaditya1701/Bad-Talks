@@ -31,8 +31,8 @@ export default function About() {
 
       <div className='flex justify-between items-center text-xs md:text-base'>
         <ul className='flex-1 p-6 space-y-4 list-disc list-inside'>
-          <li>Engaging talks from 7 industry leaders</li>
-          <li>Entrepreneurship, partnership, and business strategies</li>
+          <li>Engaging Sessions by 7 Top Entrepreneurs</li>
+          <li>Discover New Career Paths</li>
           <li>Network opportunities on business strategies</li>
         </ul>
         <ul className='flex-1 p-6 space-y-4 list-disc list-inside'>
