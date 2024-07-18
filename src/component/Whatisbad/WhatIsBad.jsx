@@ -1,9 +1,9 @@
   import React from 'react';
 import './WhatIsBad.css';
-import Img1 from '../../assets/Whatis/bad-1.webp';
-import Img2 from '../../assets/Whatis/bad-2.webp';
-import Img3 from '../../assets/Whatis/bad-3.webp';
-import Img4 from '../../assets/Whatis/bad-4.webp';
+import Img1 from '../../assets/Whatis/bad-11.png';
+import Img2 from '../../assets/Whatis/bad-21.png';
+import Img3 from '../../assets/Whatis/bad-31.png';
+import Img4 from '../../assets/Whatis/bad-41.png';
 
 const WhatisBad = () => {
   return (
@@ -25,19 +25,19 @@ const WhatisBad = () => {
       </div>
       <div className="whatisbad-image-container">
         <div className="whatisbad-image">
-          <img src={Img1} alt="Image 1" className="whatisbad-circle" />
+          <img src={Img3} alt="Image 1" className="whatisbad-circle" />
           <p className="whatisbad-desc">Internship Opportunities</p>
         </div>
         <div className="whatisbad-image">
-          <img src={Img2} alt="Image 2" className="whatisbad-circle" />
+          <img src={Img4} alt="Image 2" className="whatisbad-circle" />
           <p className="whatisbad--desc">Gain Realtime Industry Insights</p>
         </div>
         <div className="whatisbad-image">
-          <img src={Img1} alt="Image 3" className="whatisbad-circle" />
+          <img src={Img2} alt="Image 3" className="whatisbad-circle" />
           <p className="whatisbad-desc">Networking Opportunities</p>
         </div>
         <div className="whatisbad-image">
-          <img src={Img4} alt="Image 4" className="whatisbad-circle" />
+          <img src={Img1} alt="Image 4" className="whatisbad-circle" />
           <p className="whatisbad-desc">Interactive Panel Discussion</p>
         </div>
       </div>
