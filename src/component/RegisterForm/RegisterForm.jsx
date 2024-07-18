@@ -23,8 +23,7 @@ const RegisterForm = ({ Element }) => {
     formData.collegeName !== "" &&
     formData.phone !== "" &&
     formData.email !== "" &&
-    formData.year !== "" &&
-    formData.phone.length == 10;
+    formData.year !== "";
 
   const handleConfetti = () => {
     confetti({
