@@ -62,24 +62,28 @@ export default function OurSpeaker() {
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
-            <h2 className="text-white font-bold text-3xl">Raunak Anand</h2>
+            <h2 className="text-white font-bold text-3xl">Rounak Anand</h2>
             <p className="py-1 text-red-900 font-semibold">
               (Unseen, MP, 104k+ Followers)
             </p>
           </div>
           <p className="text-neutral-300 leading-relaxed text-lg md:text-xl">
-            Raunak Anand is a self-taught content creator, video producer, and
-            content marketer with 6+ years of experience who wants to make this
-            world 1% better using the art of storytelling. He has worked with
-            big shot brands like Netflix, Prime Video, MX Player, Meesho and
-            successful creators like Tech Burner and Think School.
+          Rounak Anand is a self-taught content creator and software engineer from Narsinghpur, Madhya Pradesh.
           </p>
-          <p className="text-neutral-300 leading-relaxed text-lg md:text-xl">
-            Experienced in content production and social media tactics, he
-            started India's first state-oriented infotainment channel - Unseen
-            MP. With just 80 videos, he has already crossed 115K+ followers and
-            garnered over 50M+ views.
-          </p>
+          <ul className="list-disc text-lg md:text-xl">
+            <li className="text-neutral-300 leading-relaxed">
+            Founder of Unseen MP, a platform showcasing Madhya Pradesh's hidden cultural and historical treasures.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+            Holds a Computer Science degree and trained in content creation from Nas Academy.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+            Excels in content marketing, social media strategies, and has served clients like Prime Video and MX Player.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+            Enjoys writing poems, traveling, exploring culinary delights, and is passionate about storytelling and improving the world.
+            </li>
+          </ul>
         </div>
         <div className="lg:w-1/3 flex justify-center lg:justify-end">
           <img
@@ -99,18 +103,23 @@ export default function OurSpeaker() {
               (UX Design & Growth Lead)
             </p>
           </div>
-          <p className="text-neutral-300 leading-relaxed text-lg md:text-xl">
-            • Chairman of Mittal Alliance and CEO of Badbusiness.in,
-            specializing in corporate leadership and strategic growth.
-            <br /> <br /> • Successfully led Mittal Alliance in launching
-            multiple initiatives that support startups and tech professionals.
-            <br /> <br /> • Author, YouTuber, blogger, and speaker sharing
-            business and personal growth insights.
-            <br /> <br />• Co-founder of FFA Animal NGO, advocating for animal
-            welfare. <br /> <br />• Authored influential articles and books that
-            provide valuable insights into business strategy and personal
-            development
-          </p>
+          <ul className="list-disc text-lg md:text-xl">
+            <li className="text-neutral-300 leading-relaxed">
+            Chairman of Mittal Alliance and CEO of Badbusiness.in, specializing in corporate leadership and strategic growth.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Successfully led Mittal Alliance in launching multiple initiatives that support startups and tech professionals.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Author, YouTuber, blogger, and speaker sharing business and personal growth insights.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Co-founder of FFA Animal NGO, advocating for animal welfare.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Authored influential articles and books that provide valuable insights into business strategy and personal development.
+            </li>
+          </ul>
         </div>
         <div className="lg:w-1/3 flex justify-center lg:justify-end">
           <img
@@ -127,27 +136,26 @@ export default function OurSpeaker() {
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
             <h2 className="text-white font-bold text-3xl">Sidhant Sharma</h2>
             <p className="py-1 text-red-900 font-semibold">
-              (UX Design & Growth Lead)
+              (Unseen, MP, 104k+ Followers)
             </p>
           </div>
-          <p className="text-neutral-300 leading-relaxed text-lg md:text-xl">
-            First company - Jakpinch.com May 2013 - Dec 2013 As the visionary
-            founder of Jakpinch.com, I pioneered an innovative social networking
-            platform aimed at eradicating the barriers between two distinct
-            communities. <br />
-            <b>Currently working on</b> - Founder wise international global
-            started Feb 2023 <br />
-            <b>Furry friends alliance</b> - Furry Friends Alliance is an
-            initiative started by dedicated volunteers to support animals in
-            need who cannot receive help otherwise. Our mission is to provide
-            care and assistance to these vulnerable animals. Wise international
-            global WIG is a company that provides outsourcing services across
-            various domains to businesses globally. It offers a wide range of
-            outsourcing solutions, including IT services, business process
-            outsourcing (BPO), finance and accounting services, healthcare
-            services, research and analysis, engineering services, and creative
-            services.
-          </p>
+          <ul className="list-disc text-lg md:text-xl">
+            <li className="text-neutral-300 leading-relaxed">
+              Sidhant Sharma founded Jakpinch.com, an innovative social networking platform, in May 2013.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              He is the founder of Wise International Global, offering diverse outsourcing services since February 2023.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Co-founder of Furry Friends Alliance, an initiative providing care to animals in need.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Furry Friends Alliance focuses on supporting vulnerable animals who cannot receive help otherwise.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Wise International Global provides outsourcing solutions across IT, BPO, finance, healthcare, research, engineering, and creative services.
+            </li>
+          </ul>
         </div>
         <div className="lg:w-1/3 flex justify-center lg:justify-end">
           <img
@@ -162,22 +170,28 @@ export default function OurSpeaker() {
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
-            <h2 className="text-white font-bold text-3xl">Pratham Sahu </h2>
+            <h2 className="text-white font-bold text-3xl">Pratham Sahu</h2>
             <p className="py-1 text-red-900 font-semibold">
-              (UX Design & Growth Lead)
+              (Unseen, MP, 104k+ Followers)
             </p>
           </div>
-          <p className="text-neutral-300 leading-relaxed text-lg md:text-xl">
-            Co-Founder & COO at Badbusiness.in | CMO at Global Success Media |
-            President of YLF Madhya Pradesh <br /> <br /> • Co-founder & COO of
-            BadBusiness.in, driving operational excellence and business growth.{" "}
-            <br /> <br />
-            • Diploma Engineering student passionate about innovation and
-            problem-solving. <br /> <br />
-            • Proficient in AutoCAD 2D/3D, Canva, and Microsoft Office. <br />{" "}
-            <br />• Seeking opportunities in startups or research positions for
-            hands-on experience and skill development.
-          </p>
+          <ul className="list-disc text-lg md:text-xl">
+            <li className="text-neutral-300 leading-relaxed">
+            Co-Founder & COO at Badbusiness.in | CMO at Global Success Media | President of YLF Madhya Pradesh.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Co-founder & COO of BadBusiness.in, driving operational excellence and business growth.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Diploma Engineering student passionate about innovation and problem-solving.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Proficient in AutoCAD 2D/3D, Canva, and Microsoft Office.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Seeking opportunities in startups or research positions for hands-on experience and skill development.
+            </li>
+          </ul>
         </div>
         <div className="lg:w-1/3 flex justify-center lg:justify-end">
           <img
@@ -192,23 +206,28 @@ export default function OurSpeaker() {
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
-            <h2 className="text-white font-bold text-3xl">Ayush Yadav </h2>
+            <h2 className="text-white font-bold text-3xl">Ayush Yadav</h2>
             <p className="py-1 text-red-900 font-semibold">
-              (UX Design & Growth Lead)
+              (Unseen, MP, 104k+ Followers)
             </p>
           </div>
-          <p className="text-neutral-300 leading-relaxed text-lg md:text-xl ">
-            Ayush Yadav is a multidisciplinary designer and creator with
-            experience across industries like manufacturing, food products,
-            education, shipping, entertainment, and health. He has promoted
-            campaigns for Mx Player, Alt Balaji, Amazon Prime, and Ubon, and
-            worked with various startups. His work has been featured on
-            platforms like Social Samosa, Social Media Dissect, Eat My News,
-            Bihari No. 1, and Men's XP. Services include graphic design, logo
-            design, UX research, public speaking, and visual design. He has held
-            roles such as User Experience Lead at Habuild, Design Mentor at
-            ADPList.org, and Head of Design at Fides and Spes.
-          </p>
+          <ul className="list-disc text-lg md:text-xl">
+            <li className="text-neutral-300 leading-relaxed">
+              Multidisciplinary designer with experience in manufacturing, food products, education, shipping, entertainment, and health
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Promoted campaigns for Mx Player, Alt Balaji, Amazon Prime, and Ubon.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Work featured on Social Samosa, social media Dissect, Eat My News, Bihari No. 1, and Men's XP.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Offers services in graphic design, logo design, UX research, public speaking, and visual design.
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Held roles such as User Experience Lead at Habuild and Design Mentor at ADPList.org.
+            </li>
+          </ul>
         </div>
         <div className="lg:w-1/3 flex justify-center lg:justify-end">
           <img

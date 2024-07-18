@@ -82,10 +82,9 @@ export default function Landing() {
         </div>
 
         <div className="h-full md:h-32 p-4 mb-40 md:mb-0 w-full md:w-96 bg-white rounded-3xl md:absolute relative md:right-4 lg:right-24 md:bottom-44">
-          <h3 className="text-black font-semibold text-xl">Welcome...</h3>
-          <p className="text-black/40 md:max-w-[310px] mt-2 text-lg font-medium leading-tight max-w-[230px]">
-            JOIN US FOR AN UNFORGETTABLE EVENT
-          </p>
+        <h3 className='text-black font-semibold text-xl'>Welcome...</h3>
+            <p className='text-red-500 md:max-w-[310px] mt-2 text-lg font-medium leading-tight max-w-[230px] '><span className='text-black/40 md:max-w-[310px] mt-2 text-lg font-medium leading-tight max-w-[230px]'>Be part of something extraordinary-</span>Reserve Your Seat Today!
+            </p>
           <div className="absolute h-16 w-16 bottom-0 rounded-tl-[30px] -right-4 flex items-center justify-center bg-black">
             <a href="/speakers">
               <Link2

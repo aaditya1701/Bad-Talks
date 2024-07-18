@@ -12,7 +12,10 @@ export default function NewSection() {
             <h3 className='text-white font-bold text-4xl '>Connect, Learn, and Grow!</h3>
     {/* <p className='text-white/60 max-w-3xl'>Dive into the electrifying world of B.A.D. Talks, where innovation meets inspiration.</p> */}
     <p className='text-white/60 max-w-xl'>
-    Experience B.A.D. Talks, an event dedicated to nurturing innovation and entrepreneurial growth. Hear from top CEOs as they share their success stories, challenges, and visions for the future. Become part of a vibrant community committed to excellence, progress, and the continuous pursuit of knowledge and innovation.
+    Join us at B.A.D. Talks, an event dedicated to nurturing innovation and entrepreneurial growth. Connect with top CEOs as they share their success stories, challenges, and visions for the future. Engage with a vibrant community committed to excellence, progress, and the continuous pursuit of knowledge. This is your chance to learn from industry leaders and gain valuable insights.</p>
+    <p className='text-white/60 max-w-xl'>
+
+    Don’t miss this opportunity to network and be inspired to achieve your own entrepreneurial dreams. Experience the power of shared knowledge and innovation at B.A.D. Talks, where ideas flourish and growth is nurtured. Be part of a movement that drives success and transformation.
     </p>
             </div>
       

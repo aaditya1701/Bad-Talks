@@ -31,15 +31,14 @@ export default function About() {
 
       <div className='flex justify-between items-center text-xs md:text-base'>
         <ul className='flex-1 p-6 space-y-4 list-disc list-inside'>
-          <li>Engaging Sessions by 7 Top Entrepreneurs</li>
+          <li>Engaging Sessions by Top Entrepreneurs</li>
           <li>Discover New Career Paths</li>
-          <li>Network opportunities on business strategies</li>
+          <li>Stay Informed on the Latest Business Insights</li>
         </ul>
         <ul className='flex-1 p-6 space-y-4 list-disc list-inside'>
-          <li>Insights from elite panels</li>
-          <li>Expos, Q&A aspects</li>
-          <li>Explosive Q&A summaries</li>
-          <li>Actionable takeaways for your business</li>
+          <li>Build Your Network</li>
+          <li>Develop Professional Skills</li>
+          <li>Learn and Have Fun!</li>
         </ul>
       </div>
     </div>
