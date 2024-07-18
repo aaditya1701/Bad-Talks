@@ -26,6 +26,8 @@ export default function Footer() {
           </p>
           <p className="py-2">
             <b>Event Date</b> - 08 August 2024
+            <br />
+            <b>Time</b> - 2 PM
           </p>
         </aside>
         <nav className="flex justify-between item-center gap-6">

@@ -120,6 +120,12 @@ export default function Ticket() {
             <span className="text-red-600">Bad Talks</span>.
           </h2>
           <article>
+            <p className="font-semibold"> <b>Date</b> : 08 August 2024</p>
+            <p className="font-semibold"> <b>Time</b> : 2PM</p>
+          </article>
+
+
+          <article>
             <span className="text-red-600 font-bold text-xl">Venue :</span>
             <p className="font-semibold">Premium Audi,</p>
             <p className="font-semibold">IPS Academy, Rajendra Nagar, Indore, 452012</p>

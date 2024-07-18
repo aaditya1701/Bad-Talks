@@ -63,6 +63,10 @@ export default function Landing() {
             Venue : Audi-2, IPS Academy <br />
             Rajendra Nagar, Indore, Madhya Pradesh, 452012
           </h3>
+          {/* <h3 className='pl-3 font-semibold text-xl'>
+            Date :  08 August 2024 <br />
+            Time : 2 PM
+          </h3> */}
         </div>
 
         <div className='h-full md:h-32 p-4 mb-40 md:mb-0 w-full md:w-96 bg-white rounded-3xl md:absolute relative md:right-4 lg:right-24 md:bottom-44'>
