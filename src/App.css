@@ -63,7 +63,7 @@ img {
 
 /* Define the fading and transition effects */
 section, img {
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(20px);
   transition: opacity 1s, transform 1s;
 }
