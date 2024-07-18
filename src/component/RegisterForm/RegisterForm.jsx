@@ -160,7 +160,7 @@ const RegisterForm = ({ Element }) => {
           required
         />
         <label htmlFor="phone" className="text-xs md:text-sm lg:text-base">
-          Phone Number:
+          Phone&nbsp;Number:
         </label>
       </div>
 
@@ -177,7 +177,7 @@ const RegisterForm = ({ Element }) => {
           htmlFor="collegeName"
           className="text-xs md:text-sm lg:text-base"
         >
-          College Name:
+          College&nbsp;Name:
         </label>
       </div>
 
@@ -193,7 +193,7 @@ const RegisterForm = ({ Element }) => {
           required
         />
         <label htmlFor="year" className="text-xs md:text-sm lg:text-base">
-          Year:&nbsp;
+          Year&nbsp;Of&nbsp;Graduation:
         </label>
       </div>
 
@@ -207,7 +207,8 @@ const RegisterForm = ({ Element }) => {
           required
         />
         <label htmlFor="why" className="text-xs md:text-sm lg:text-base">
-          Why &nbsp; to &nbsp; register?
+        What's&nbsp; one&nbsp; question&nbsp; you'd&nbsp; ask&nbsp; the&nbsp; speakers?
+
         </label>
       </div>
       <Element>
