@@ -5,13 +5,13 @@ import ceo3 from "../assets/Speakers/ceo3.webp";
 import ceo4 from "../assets/Speakers/ceo4.webp";
 import ceo5 from "../assets/Speakers/ceo5.webp";
 import ceo6 from "../assets/Speakers/ceo6.webp";
-import ceo7 from "../assets/Speakers/ceo7.png";
+import ceo7 from "../assets/Speakers/ceo7.webp";
 
 export default function OurSpeaker() {
   return (
     <main className="h-full w-full py-20 px-4 lg:px-24 space-y-24">
       {/* second section */}
-      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-blue-500 rounded-3xl">
+      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-red-400 rounded-3xl">
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
@@ -58,7 +58,7 @@ export default function OurSpeaker() {
         </div>
       </section>
       {/* third section */}
-      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-red-500 rounded-3xl">
+      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-gray-400 rounded-3xl">
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
@@ -94,13 +94,13 @@ export default function OurSpeaker() {
         </div>
       </section>
       {/* fourth section */}
-      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-purple-500 rounded-3xl">
+      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-blue-400 rounded-3xl">
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
             <h2 className="text-white font-bold text-3xl">Sarthak Mittal</h2>
             <p className="py-1 text-red-900 font-semibold">
-              (UX Design & Growth Lead)
+              (CEO Badbusiness.in)
             </p>
           </div>
           <ul className="list-disc text-lg md:text-xl">
@@ -130,13 +130,13 @@ export default function OurSpeaker() {
         </div>
       </section>
       {/* fifth section */}
-      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-emerald-500 rounded-3xl">
+      {/* <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-emerald-500 rounded-3xl">
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
             <h2 className="text-white font-bold text-3xl">Sidhant Sharma</h2>
             <p className="py-1 text-red-900 font-semibold">
-              (Unseen, MP, 104k+ Followers)
+              (Founder Furry Friends Alliance)
             </p>
           </div>
           <ul className="list-disc text-lg md:text-xl">
@@ -164,15 +164,15 @@ export default function OurSpeaker() {
             className="h-full max-h-96 w-auto rounded-[6rem] border-4 border-white"
           />
         </div>
-      </section>
+      </section> */}
 
-      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-pink-500 rounded-3xl">
+      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-red-400 rounded-3xl">
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
             <h2 className="text-white font-bold text-3xl">Pratham Sahu</h2>
             <p className="py-1 text-red-900 font-semibold">
-              (Unseen, MP, 104k+ Followers)
+              (Co-Founder & COO of Badbusiness.in)
             </p>
           </div>
           <ul className="list-disc text-lg md:text-xl">
@@ -202,13 +202,13 @@ export default function OurSpeaker() {
         </div>
       </section>
 
-      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-blue-500 rounded-3xl">
+      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-gray-400 rounded-3xl">
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
           <div className="relative">
             <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
             <h2 className="text-white font-bold text-3xl">Ayush Yadav</h2>
             <p className="py-1 text-red-900 font-semibold">
-              (Unseen, MP, 104k+ Followers)
+              (UX Designer & Growth Lead)
             </p>
           </div>
           <ul className="list-disc text-lg md:text-xl">
@@ -229,7 +229,7 @@ export default function OurSpeaker() {
             </li>
           </ul>
         </div>
-        <div className="lg:w-1/3 flex justify-center lg:justify-end">
+        <div className="lg:w-1/4 flex justify-center lg:justify-end">
           <img
             src={ceo7}
             alt="Ayush Yadav"

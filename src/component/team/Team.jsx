@@ -26,6 +26,7 @@ import Shreya from "../../assets/Teams/Management/Shreya.webp"
 import Shrishti from "../../assets/Teams/Management/Shrishti.webp"
 import Shubh from "../../assets/Teams/Management/Shubh.webp"
 import Tanisha from "../../assets/Teams/Management/Tanisha.webp"
+import Poonam from "../../assets/Teams/Management/Poonam.webp"
 
 // Curation
 import Aditya from "../../assets/Teams/Curation/Aditya.webp"
@@ -63,6 +64,7 @@ const teamData = {
     { name: 'Shivanshi Gupta', img: Shivanshi },
     { name: 'Ravi Gautam', img: Ravi },
     { name: 'Palak Jaiswal', img: Palak },
+    { name: 'Aaditya Mahashabde', img: BharatKhatwani},
     { name: 'Ananya Gupta', img:  Ananya}
   ],
   Curation: [
@@ -79,7 +81,7 @@ const teamData = {
     { name: 'Shrishti Arya', img: Shrishti },
     { name: 'Shubh Jain', img: Shubh },
     { name: 'Tanisha Dhakad', img: Tanisha },
-    { name: 'Poonam Mewada', img: Bharat }
+    { name: 'Poonam Mewada', img: Poonam }
   ],
   Design: [
     { name: 'Tanishq Thakur', img: tanishq },
