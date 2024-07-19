@@ -196,6 +196,7 @@ const RegisterForm = ({ Element }) => {
 
       <div className="inputBox">
         <input
+        className="mt-4  "
           type="text"
           id="why"
           name="why"
@@ -203,10 +204,10 @@ const RegisterForm = ({ Element }) => {
           onChange={handleChange}
           required
         />
-        <label htmlFor="why" className="text-xs md:text-sm lg:text-base">
-        What's&nbsp; one&nbsp; question&nbsp; you'd&nbsp; ask&nbsp; the&nbsp; speakers?
-
+        <label htmlFor="why" className="text-xs md:text-sm lg:text-base  ">
+        What's&nbsp; one&nbsp; question&nbsp; you'd&nbsp; ask&nbsp; the &nbsp; speakers? &nbsp;
         </label>
+        
       </div>
       <Element>
         <Button
