@@ -187,8 +187,6 @@ const RegisterForm = ({ Element }) => {
           name="year"
           value={formData.year}
           onChange={handleChange}
-          min={1}
-          max={4}
           required
         />
         <label htmlFor="year" className="text-xs md:text-sm lg:text-base">
