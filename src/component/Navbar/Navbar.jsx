@@ -36,7 +36,7 @@ function Navbar() {
   return (
     <div className="flex justify-between py-4 px-8 h-20 sticky top-0 z-[999999]  items-center">
       <div className="Nav_left">
-        <img src={logo} alt="Logo" />
+       <a href="/#home">  <img src={logo} alt="Logo"  /></a>
       </div>
       <div
         className={`hidden md:flex gap-6 rounded-full  bg-white/10 backdrop-blur-md py-4 px-12 ${
@@ -83,7 +83,7 @@ function Navbar() {
         <Dialog>
           <DialogTrigger>
             <div className="register-button">
-              Apply Now
+            REGISTER NOW
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"
@@ -165,10 +165,10 @@ function Navbar() {
                 Contact Us
               </a>
               </SheetClose>
-
+{/* 
               <SheetClose asChild>
               <div className="register-button">
-              Apply Now
+              REGISTER NOW
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"
@@ -181,7 +181,7 @@ function Navbar() {
                 ></path>
               </svg>
             </div>
-              </SheetClose>
+              </SheetClose> */}
             </div>
           </div>
         </SheetContent>

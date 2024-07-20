@@ -46,7 +46,7 @@ TALK
         <Dialog>
           <DialogTrigger >
             <div className="register-button self-center " >
-              Apply Now
+              REGISTER NOW
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"
@@ -75,12 +75,13 @@ TALK
 
 <div className='md:absolute md:bottom-44  md:left-4  lg:left-24 h-40 w-full md:w-96 '>
 <ArrowRight  size={50} className=' -rotate-45'/>
-<h3 className='pl-3 font-semibold text-xl'>Venue :   Audi-2, IPS Academy <br /> Rajendra  Nagar, Indore, Madhya Pradesh, 452012 </h3>
+<h3 className='pl-3 font-semibold text-xl'>Venue :   Premium Audi, IPS Academy <br /> Rajendra  Nagar, Indore, Madhya Pradesh, 452012 </h3>
 </div>
 {/* card */}
 <div className='h-full md:h-32  p-4 mb-40 md:mb-0 w-full md:w-96 bg-white rounded-3xl md:absolute relative  md:right-4  lg:right-24 md:bottom-44 '>
     <h3 className='text-black font-semibold text-xl'>Welcome...</h3>
-    <p className='text-black/40 md:max-w-[310px] mt-2 text-lg font-medium leading-tight max-w-[230px]'>JOIN US FOR AN UNFORGETTABLE EVENT </p>
+    <p className='text-red-500 md:max-w-[310px] mt-2 text-lg font-medium leading-tight max-w-[230px] '><span className='text-black/40 md:max-w-[310px] mt-2 text-lg font-medium leading-tight max-w-[230px]'>Be part of something extraordinary-</span>Reserve Your Seat Today!
+ </p>
     {/* margin-top: 1em;
         font-size: 16px;
         font-weight: 500; */}

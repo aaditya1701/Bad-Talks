@@ -9,13 +9,14 @@ export default function NewSection() {
     <main className='h-full md:h-[85vh] mt-3 w-full flex flex-col justify-between gap-12 p-4 lg:p-16' id="bad">
         <article className='flex text-sm flex-col gap-8 lg:ml-32 md:ml-32'>
             <div className='flex flex-col gap-8 text-center md:text-left'>
-            <h3 className='text-white font-bold text-4xl '>Calling all Visionaries and Change-makers! </h3>
+            <h3 className='text-white font-bold text-4xl '>Connect, Learn, and Grow!</h3>
     {/* <p className='text-white/60 max-w-3xl'>Dive into the electrifying world of B.A.D. Talks, where innovation meets inspiration.</p> */}
     <p className='text-white/60 max-w-xl'>
-    Dive into the electrifying world of B.A.D. Talks, where innovation meets inspiration. 
-    We are committed to curating a dynamic platform where successful founders and entrepreneurs converge. Our mission is to amplify their voices, celebrate their triumphs, and inspire the next generation of visionaries.
+    Join us at B.A.D. Talks, an event dedicated to nurturing innovation and entrepreneurial growth. Connect with top CEOs as they share their success stories, challenges, and visions for the future. Engage with a vibrant community committed to excellence, progress, and the continuous pursuit of knowledge. This is your chance to learn from industry leaders and gain valuable insights.</p>
+    <p className='text-white/60 max-w-xl'>
+
+    Don’t miss this opportunity to network and be inspired to achieve your own entrepreneurial dreams. Experience the power of shared knowledge and innovation at B.A.D. Talks, where ideas flourish and growth is nurtured. Be part of a movement that drives success and transformation.
     </p>
-    <p className='text-white/60 max-w-xl'>Join a community of brilliant minds, learn from success stories, and ignite your entrepreneurial journey.</p>
             </div>
       
         </article>

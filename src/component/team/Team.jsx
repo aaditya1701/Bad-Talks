@@ -8,6 +8,7 @@ import Aniket from "../../assets/Teams/Lead/Aniket.webp";
 import deeksha from "../../assets/Teams/Lead/deeksha.webp"
 import Devesh from "../../assets/Teams/Lead/Devesh.webp"
 import Anant from "../../assets/Teams/Lead/Anant.webp"
+import Parag from "../../assets/Teams/Lead/parag.webp"
 // Tech 
 import BharatKhatwani from "../../assets/Teams/Tech/Bharat.webp"
 import Bharat from "../../assets/Teams/Tech/Bharat.webp"
@@ -25,12 +26,12 @@ import Shreya from "../../assets/Teams/Management/Shreya.webp"
 import Shrishti from "../../assets/Teams/Management/Shrishti.webp"
 import Shubh from "../../assets/Teams/Management/Shubh.webp"
 import Tanisha from "../../assets/Teams/Management/Tanisha.webp"
+import Poonam from "../../assets/Teams/Management/Poonam.webp"
 
 // Curation
 import Aditya from "../../assets/Teams/Curation/Aditya.webp"
 import Khushi from "../../assets/Teams/Curation/Khushi.webp"
 import Soumya from "../../assets/Teams/Curation/Soumya.webp"
-import Bhuvneshwari from "../../assets/Teams/Curation/Bhuvneshwari.webp"
 import Anushka from "../../assets/Teams/Curation/AnushkaM.webp"
 import Vishal from "../../assets/Teams/Curation/Vishal.webp"
 
@@ -54,23 +55,22 @@ const teamData = {
   Lead: [
     { name: 'Anant Pawar', img: Anant },
     { name: 'Aniket Singh', img: Aniket },
-    { name: 'Deeksha Jain', img: deeksha },
-    { name: 'Parag Agarwal', img: BharatKhatwani },
-    { name: 'Devesh Gurjar', img: Devesh }
+    { name: 'Parag Agrawal', img: Parag },
+    { name: 'Devesh Gurjar', img: Devesh },
+    { name: 'Deeksha Jain', img: deeksha }
   ],
   Tech: [
     { name: 'Bharat Khatwani', img: BharatKhatwani },
     { name: 'Shivanshi Gupta', img: Shivanshi },
     { name: 'Ravi Gautam', img: Ravi },
     { name: 'Palak Jaiswal', img: Palak },
-    { name: 'Ananya Gupta', img:  Ananya},
-    { name: 'Other', img: Bharat }
+    { name: 'Aaditya Mahashabde', img: BharatKhatwani},
+    { name: 'Ananya Gupta', img:  Ananya}
   ],
   Curation: [
     { name: 'Aditya Kumar Joshi', img: Aditya },
     { name: 'Khushi Nikam', img: Khushi },
     { name: 'Somya Kinkar', img: Soumya },
-    { name: 'Bhuvneshwari Batham', img: Bhuvneshwari },
     { name: 'Vishal Kumar', img: Vishal },
     { name: 'Anushka Meena', img: Anushka  }
   ],
@@ -81,7 +81,7 @@ const teamData = {
     { name: 'Shrishti Arya', img: Shrishti },
     { name: 'Shubh Jain', img: Shubh },
     { name: 'Tanisha Dhakad', img: Tanisha },
-    { name: 'Poonam Mewada', img: Bharat }
+    { name: 'Poonam Mewada', img: Poonam }
   ],
   Design: [
     { name: 'Tanishq Thakur', img: tanishq },
