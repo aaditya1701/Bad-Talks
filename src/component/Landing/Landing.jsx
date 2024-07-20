@@ -60,7 +60,10 @@ TALK
               </svg>
             </div>
           </DialogTrigger>
-          <DialogContent className="bg-black/10 px-4 md:px-24 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center">
+          <DialogContent  onInteractOutside={(e) => {
+          e.preventDefault();
+        }}
+           className="bg-black/10 px-4 md:px-24 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center">
             <DialogTitle className="text-red-600 font-semibold text-3xl py-4">
               Register
             </DialogTitle>

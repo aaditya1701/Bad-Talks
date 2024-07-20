@@ -32,7 +32,7 @@ function Navbar() {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-
+  const [open, setOpen] = useState(false);
   return (
     <div className="flex justify-between py-4 px-8 h-20 sticky top-0 z-[999999]  items-center">
       <div className="Nav_left">
@@ -81,6 +81,7 @@ function Navbar() {
 
       <div className="Nav_right">
         <Dialog>
+
           <DialogTrigger>
             <div className="register-button">
             REGISTER NOW
@@ -97,7 +98,9 @@ function Navbar() {
               </svg>
             </div>
           </DialogTrigger>
-          <DialogContent className="bg-black/10 px-4 md:px-24 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center">
+          <DialogContent onInteractOutside={(e) => {
+          e.preventDefault();
+        }} className="bg-black/10 px-4 md:px-24 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center">
             <DialogTitle className="text-red-600 font-semibold text-3xl py-4">
               Register
             </DialogTitle>
