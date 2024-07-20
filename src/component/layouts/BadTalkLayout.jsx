@@ -6,6 +6,9 @@ import NewSection from '../NewSection'
 import Footer from '../Footer/Footer'
 import Landing from '../Landing/Landing'
 import Map from '../Map'
+import About from '../AboutUs/About'
+
+
 
 export default function BadTalkLayout() {
   return (
@@ -14,7 +17,7 @@ export default function BadTalkLayout() {
     <div className="app bg-black">
       <Landing />
             <WhatisBad/>
-            {/* <AboutUs /> */}
+             <About /> 
             <NewSection />
             <Map/>
             <Footer />
