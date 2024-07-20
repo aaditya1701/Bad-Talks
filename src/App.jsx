@@ -18,6 +18,9 @@ import Ticket from "./component/Ticket/Ticket";
 import About from "./component/About/About";
 import WhatisBad from "./component/Whatisbad/WhatIsBad";
 import Map from "./component/Map";
+import Home from "./component/ips-page/Home";
+import BadTalkLayout from "./component/layouts/BadTalkLayout";
+
 
 
 function App() {
@@ -54,27 +57,15 @@ function App() {
   }, []);
 
   return (
-    
     <div className="app bg-black ">
-      
-        <Navbar />
       <Routes>
-        <Route path="/" element={
-          <>
-            <Landing />
-            <WhatisBad/>
-            
-            <AboutUs />
-            <NewSection />
-            <Map />
-            <Footer />
-          </>
-        } />
-        <Route path="/speakers" element={<OurSpeaker />} />
-        <Route path="/Register" element={<RegisterForm />} />
-       <Route path="/ourteam" element={   <Team />} />
-       <Route path="/ticket" element={<Ticket />} />
-
+        <Route path="/" element={<Home />} />
+         
+          <Route path="/bad-talk" element={<BadTalkLayout />} />
+<Route path="/speakers" element={<OurSpeaker />} />
+<Route path="/Register" element={<RegisterForm />} />
+<Route path="/ourteam" element={<Team />} />
+<Route path="/ticket" element={<Ticket />} />
 <Route path="/ticket/:id" element={<Ticket />} />
       </Routes>
     </div>

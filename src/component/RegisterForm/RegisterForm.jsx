@@ -22,8 +22,8 @@ const RegisterForm = ({ Element }) => {
     formData.why !== "" &&
     formData.collegeName !== "" &&
     formData.phone !== "" &&
-    formData.email !== "" &&
-    formData.year !== "";
+    formData.email !== "" 
+
 
   const handleConfetti = () => {
     confetti({
@@ -69,35 +69,41 @@ const RegisterForm = ({ Element }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const userCollectionRef = collection(db, "users");
+      if(condition){
+        const userCollectionRef = collection(db, "users");
   
-      const existingUserQuery = query(userCollectionRef, where("email", "==", formData.email));
-      const existingUserSnapshot = await getDocs(existingUserQuery);
+        const existingUserQuery = query(userCollectionRef, where("email", "==", formData.email));
+        const existingUserSnapshot = await getDocs(existingUserQuery);
+        if (!existingUserSnapshot.empty) {
+          console.error("Email already registered");
+          return;
+        }
+        const ticketId = generateTicketID(formData.name);
+        await addDoc(userCollectionRef, {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          collegeName: formData.collegeName,
+          year: formData.year,
+          why: formData.why,
+          ticketId: ticketId,
+        });
   
-      if (!existingUserSnapshot.empty) {
-        console.error("Email already registered");
-        return;
+        const userDaata = await getUserDataByEmail( formData.email)
+        console.log(userDaata)
+        if(userDaata.ticketId){
+          handleConfetti();
+          sendEmail({ ...formData, ticketId: userDaata.ticketId });
+          console.log("User created successfully!");
+          navigate(`/ticket/${userDaata.ticketId}`);
+        }
       }
-
-      const ticketId = generateTicketID(formData.name);
-      await addDoc(userCollectionRef, {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        collegeName: formData.collegeName,
-        year: formData.year,
-        why: formData.why,
-        ticketId: ticketId,
-      });
-
-      const userDaata = await getUserDataByEmail( formData.email)
-      console.log(userDaata)
-      if(userDaata.ticketId){
-        handleConfetti();
-        sendEmail({ ...formData, ticketId: userDaata.ticketId });
-        console.log("User created successfully!");
-        navigate(`/ticket/${userDaata.ticketId}`);
+      else{
+        alert("please fill all details")
       }
+      
+
+      
     } catch (error) {
       console.error("Error creating user:", error);
     }
@@ -212,17 +218,17 @@ const RegisterForm = ({ Element }) => {
           Why &nbsp;do&nbsp; you&nbsp; want&nbsp; to&nbsp; register?
         </label>
       </div>
-      <Element>
+ 
         <Button
-         
+        //  onClick={()=> handleSubmit()}
           variant={"outline"}
           className="rounded-xl w-full mt-4 text-black"
-          type="submit"
-          disabled={!condition}
+         type="submit"
+          // disabled={!condition}
         >
           Submit
+        
         </Button>
-      </Element>
     </form>
   );
 };
