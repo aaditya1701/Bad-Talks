@@ -71,6 +71,7 @@ const RegisterForm = ({ Element }) => {
         const existingUserQuery = query(userCollectionRef, where("email", "==", formData.email));
         const existingUserSnapshot = await getDocs(existingUserQuery);
         if (!existingUserSnapshot.empty) {
+          alert("Email already registered");
           console.error("Email already registered");
           return;
         }
