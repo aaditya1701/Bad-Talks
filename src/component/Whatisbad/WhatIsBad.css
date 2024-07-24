@@ -1,170 +1,169 @@
 .whatisbad-section {
-    padding: 0 1em;
-    background-color: #000;
-    min-height: 85vh;
-    font-family: "Nunito", sans-serif;
+  padding: 0 1em;
+  background-color: #000;
+  min-height: 85vh;
+  font-family: "Nunito", sans-serif;
 }
 
 .whatisbad-why-attend {
-    color:white;
+  color: white;
 }
 
 .whatisbad-image-container {
-    justify-content: center;
-    text-align: center;
-    margin-top: 3em;
-    display: flex;
-    flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .whatisbad-image {
-    display: inline-block;
-    margin-right: 3em;
-    width: 100%;
-    max-width: 250px;
-    text-align: center;
+  display: inline-block;
+  margin-right: 3em;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
 }
 
 .whatisbad-circle {
-    width: 100%;
-    height: 100%;
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 10px auto;
-    border: 5px solid rgb(139, 109, 71);
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 5px solid rgb(139, 109, 71);
 }
 
 hr {
-    width: 33%;
-    margin: 0 10px;
-    border: 2px solid red;
-    border-radius: 5px;
-    display: inline-block;
-    vertical-align: middle;
+  width: 33%;
+  margin: 0 10px;
+  border: 2px solid red;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .whatisbad-separator-line {
-    color: white;
-    display: inline-block;
-  
-    font-size: 1.5rem;
-    margin-top:32px ;
+  color: white;
+  display: inline-block;
+
+  font-size: 1.5rem;
+  margin-top: 32px;
 }
 
 .whatisbad-top {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .whatisbad-desc {
-    color: white;
-    font-size: 14px;
-    padding-left: 48px;
-    padding-right: 48px;
+  color: white;
+  font-size: 14px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .whatisbad-separator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     margin: 20px 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .whatisbad-main-head {
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-top: 24px;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 @media (max-width: 1024px) {
-    .whatisbad-image-container {
-        flex-wrap: wrap;
-    }
+  .whatisbad-image-container {
+    flex-wrap: wrap;
+  }
 
-    .whatisbad-image {
-        width: 50%;
-        height: 50%;
-    }
+  .whatisbad-image {
+    width: 50%;
+    height: 50%;
+  }
 
-    hr {
-        width: 50%;
-    }
+  hr {
+    width: 50%;
+  }
 
-    .whatisbad-desc {
-        font-size: 1.2rem;
-    }
+  .whatisbad-desc {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .whatisbad-image {
-        width: 50%;
-    }
+  .whatisbad-image {
+    width: 50%;
+  }
 
-    hr {
-        width: 36%;
-    }
+  hr {
+    width: 36%;
+  }
 
-    /* .desc {
+  /* .desc {
         font-size: 1rem;
     } */
 }
 
 @media (max-width: 600px) {
-    .whatisbad-image-container {
-        flex-wrap: wrap;
-    }
+  .whatisbad-image-container {
+    flex-wrap: wrap;
+  }
 
-    .whatisbad-circle {
-        margin: 5px;
-        border: 3px solid rgb(139, 109, 71);
-    }
+  .whatisbad-circle {
+    margin: 5px;
+    border: 3px solid rgb(139, 109, 71);
+  }
 
-    .whatisbad-image {
-        width: 40%;
-        height: 40%;
-        margin-right: 30px;
-    }
+  .whatisbad-image {
+    width: 40%;
+    height: 40%;
+    margin-right: 30px;
+  }
 
-    hr {
-        width: 100%;
-    }
+  hr {
+    width: 100%;
+  }
 
-    .whatisbad-desc {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 0.6rem;
-        margin-bottom: 2rem;
-    }
+  .whatisbad-desc {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 2rem;
+  }
 
-    .whatisbad-separator-line {
-        font-size: 0.9rem;
-    }
+  .whatisbad-image p {
+    font-size: 1rem;
+  }
 
-    hr {
-        margin: 0 5px;
-    }
+  hr {
+    margin: 0 5px;
+  }
 
-    .whatisbad-main-head {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
+  .whatisbad-main-head {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 340px) {
-    .whatisbad-circle {
-        margin: 0px;
-        border: 3px solid rgb(139, 109, 71);
-    }
+  .whatisbad-circle {
+    margin: 0px;
+    border: 3px solid rgb(139, 109, 71);
+  }
 
-    .whatisbad-image {
-        width: 30%;
-        margin-right: 35px;
-    }
+  .whatisbad-image {
+    width: 30%;
+    margin-right: 35px;
+  }
 
-    .whatisbad-desc {
-        font-size: 0.6rem;
-    }
+  .whatisbad-desc {
+    font-size: 0.6rem;
+  }
 }
