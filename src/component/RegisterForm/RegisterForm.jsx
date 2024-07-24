@@ -64,7 +64,10 @@ const RegisterForm = ({ Element }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
+ 
     try {
+      const name=formData.name.split(" ")[0]
       if(condition){
         const userCollectionRef = collection(db, "users");
   
@@ -75,7 +78,8 @@ const RegisterForm = ({ Element }) => {
           console.error("Email already registered");
           return;
         }
-        const ticketId = generateTicketID(formData.name);
+        const ticketId = generateTicketID(name);
+        
         await addDoc(userCollectionRef, {
           name: formData.name,
           email: formData.email,
