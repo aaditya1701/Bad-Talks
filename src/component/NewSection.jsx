@@ -2,7 +2,7 @@ import { BaggageClaim, CaseUpper, CheckCheck, GhostIcon } from 'lucide-react'
 import React from 'react'
 import connect from "../assets/connect.jpeg"
 import intern from "../assets/intern.jpg"
-import swag from "../assets/swag.png"
+import swag from "../assets/t-shirt.png"
 
 export default function NewSection() {
   return (
