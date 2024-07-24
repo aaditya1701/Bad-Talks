@@ -16,6 +16,7 @@ const RegisterForm = ({ Element }) => {
     collegeName: "",
     year: "",
     why: "",
+    referral: "",
   });
   const condition =
     formData.name !== "" &&
@@ -87,6 +88,7 @@ const RegisterForm = ({ Element }) => {
           collegeName: formData.collegeName,
           year: formData.year,
           why: formData.why,
+          referral: formData.referral,
           ticketId: ticketId,
         });
   
@@ -218,6 +220,21 @@ const RegisterForm = ({ Element }) => {
         What's&nbsp; one&nbsp; question&nbsp; you'd&nbsp; ask&nbsp; the &nbsp; speakers? &nbsp;
         </label>
         
+      </div>
+
+
+      <div className="inputBox">
+        <input
+          type="text"
+          id="referral"
+          name="referral"
+          value={formData.referral}
+          onChange={handleChange}
+        
+        />
+        <label htmlFor="name" className="text-xs md:text-sm lg:text-base">
+          Referral:&nbsp;
+        </label>
       </div>
  
         <Button
