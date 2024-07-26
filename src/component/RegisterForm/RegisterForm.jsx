@@ -1,30 +1,35 @@
-import React, { useState, useEffect } from "react";
-import { Navigate, useNavigate, useNavigation } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./RegisterForm.css";
 import { Button } from "../../components/ui/button";
 import confetti from "canvas-confetti";
-import { addDoc, collection, doc, getDocs, setDoc, where, query } from "firebase/firestore";
+import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../firebase";
 import sendEmail from "@/sendEmail";
 
 const RegisterForm = ({ Element }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
     collegeName: "",
     year: "",
-    why: "",
+    computerCode: "",
+    questionToSpeaker: "",
     referral: "",
   });
-  const condition =
-    formData.name !== "" &&
-    formData.why !== "" &&
-    formData.collegeName !== "" &&
-    formData.phone !== "" &&
-    formData.email !== "" 
 
+  const condition =
+    formData.firstName !== "" &&
+    formData.lastName !== "" &&
+    formData.email !== "" &&
+    formData.phone !== "" &&
+    formData.collegeName !== "" &&
+    formData.year !== "" &&
+    formData.computerCode !== "" &&
+    formData.questionToSpeaker !== "";
 
   const handleConfetti = () => {
     confetti({
@@ -58,20 +63,18 @@ const RegisterForm = ({ Element }) => {
       return userData;
     } catch (error) {
       console.error("Error fetching user data:", error);
-      alert(error)
+      alert(error);
       return null;
     }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
- 
+
     try {
-      const name=formData.name.split(" ")[0]
-      if(condition){
+      if (condition) {
         const userCollectionRef = collection(db, "users");
-  
+
         const existingUserQuery = query(userCollectionRef, where("email", "==", formData.email));
         const existingUserSnapshot = await getDocs(existingUserQuery);
         if (!existingUserSnapshot.empty) {
@@ -79,50 +82,29 @@ const RegisterForm = ({ Element }) => {
           console.error("Email already registered");
           return;
         }
-        const ticketId = generateTicketID(name);
+
+        const ticketId = generateTicketID(formData.firstName);
         
         await addDoc(userCollectionRef, {
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          collegeName: formData.collegeName,
-          year: formData.year,
-          why: formData.why,
-          referral: formData.referral,
+          ...formData,
           ticketId: ticketId,
         });
-  
-        const userDaata = await getUserDataByEmail( formData.email)
-        console.log(userDaata)
-        if(userDaata.ticketId){
-          handleConfetti();
-          sendEmail({ ...formData, ticketId: userDaata.ticketId });
-          console.log("User created successfully!");
-          navigate(`/ticket/${userDaata.ticketId}`);
-        }
-      }
-      else{
-        alert("please fill all details")
-      }
-      
 
-      
+        const userData = await getUserDataByEmail(formData.email);
+        console.log(userData);
+        if (userData.ticketId) {
+          handleConfetti();
+          sendEmail({ ...formData, ticketId: userData.ticketId });
+          console.log("User created successfully!");
+          navigate(`/ticket/${userData.ticketId}`);
+        }
+      } else {
+        alert("Please fill all details");
+      }
     } catch (error) {
       console.error("Error creating user:", error);
     }
   };
-
-  useEffect(() => {
-    document.querySelectorAll("label").forEach((label) => {
-      label.innerHTML = label.innerText
-        .split("")
-        .map(
-          (letter, i) =>
-            `<span style="transition-delay:${i * 0}ms">${letter}</span>`
-        )
-        .join("");
-    });
-  }, []);
 
   const handleClose = () => {
     window.location.href = "/";
@@ -131,20 +113,31 @@ const RegisterForm = ({ Element }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className=" w-full space-y-0  md:space-y-4 backdrop-blur-md"
+      className="w-full space-y-0 md:space-y-4 backdrop-blur-md "
     >
-      <div className="inputBox">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="name" className="text-xs md:text-sm lg:text-base">
-          Name:&nbsp;
-        </label>
+      <div className="nameContainer">
+        <div className="inputBox">
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="First Name"
+            value={formData.firstName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="inputBox">
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+            value={formData.lastName}
+            onChange={handleChange}
+            required
+          />
+        </div>
       </div>
 
       <div className="inputBox">
@@ -152,13 +145,11 @@ const RegisterForm = ({ Element }) => {
           type="email"
           id="email"
           name="email"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
           required
         />
-        <label htmlFor="email" className="text-xs md:text-sm lg:text-base">
-          Email:&nbsp;
-        </label>
       </div>
 
       <div className="inputBox">
@@ -166,87 +157,87 @@ const RegisterForm = ({ Element }) => {
           type="number"
           id="phone"
           name="phone"
+          placeholder="Phone Number"
           value={formData.phone}
           onChange={handleChange}
           required
         />
-        <label htmlFor="phone" className="text-xs md:text-sm lg:text-base">
-          Phone&nbsp;Number:
-        </label>
       </div>
 
       <div className="inputBox">
-        <input
-          type="text"
+        <select
           id="collegeName"
           name="collegeName"
           value={formData.collegeName}
           onChange={handleChange}
           required
-        />
-        <label
-          htmlFor="collegeName"
-          className="text-xs md:text-sm lg:text-base"
         >
-          College&nbsp;Name:
-        </label>
+          <option value="">Select your college</option>
+          <option value="ips">IPS</option>
+          <option value="other">Other College</option>
+        </select>
+      </div>
+
+      <div className="yearCodeContainer">
+        <div className="inputBox">
+          <select
+            id="year"
+            name="year"
+            value={formData.year}
+            onChange={handleChange}
+            required
+          >
+            <option value="">Select your year</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div className="inputBox">
+          <input
+            type="text"
+            id="computerCode"
+            name="computerCode"
+            placeholder="Computer Code (Optional)"
+            value={formData.computerCode}
+            onChange={handleChange}
+            required
+          />
+        </div>
       </div>
 
       <div className="inputBox">
         <input
-          type="number"
-          id="year"
-          name="year"
-          value={formData.year}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="year" className="text-xs md:text-sm lg:text-base">
-          Year&nbsp;Of&nbsp;Graduation:
-        </label>
-      </div>
-
-      <div className="inputBox">
-        <input
-        className="mt-4  "
+          className="mt-4"
           type="text"
-          id="why"
-          name="why"
-          value={formData.why}
+          id="questionToSpeaker"
+          name="questionToSpeaker"
+          placeholder="What's one question you'd ask the speakers?"
+          value={formData.questionToSpeaker}
           onChange={handleChange}
           required
         />
-        <label htmlFor="why" className="text-xs md:text-sm lg:text-base  ">
-        What's&nbsp; one&nbsp; question&nbsp; you'd&nbsp; ask&nbsp; the &nbsp; speakers? &nbsp;
-        </label>
-        
       </div>
-
 
       <div className="inputBox">
         <input
           type="text"
           id="referral"
           name="referral"
+          placeholder="Referral (Optional)"
           value={formData.referral}
           onChange={handleChange}
-        
         />
-        <label htmlFor="name" className="text-xs md:text-sm lg:text-base">
-          Referral:&nbsp;
-        </label>
       </div>
- 
-        <Button
-        //  onClick={()=> handleSubmit()}
-          variant={"outline"}
-          className="rounded-xl w-full mt-4 text-black"
-         type="submit"
-          // disabled={!condition}
-        >
-          Submit
-        
-        </Button>
+
+      <Button
+        variant={"outline"}
+        className="rounded-xl w-full mt-4 text-black"
+        type="submit"
+      >
+        Submit
+      </Button>
     </form>
   );
 };

@@ -131,7 +131,6 @@ export default function Landing() {
               id="random_names"
               ref={randomNamesRef}
             >
-              {/* Placeholder text */}
               {names[0]}
             </span>
           </p>
@@ -153,24 +152,35 @@ export default function Landing() {
         </div>
 
         {/* //footer */}
-        <div className="absolute bottom-0 h-24 w-full bg-white left-0 right-0">
-          <div className="relative h-full w-full">
-            <div className="h-24 absolute w-24 rounded-full bg-black -top-1/2 right-1/2 translate-x-1/2">
-              <a
-                href="#why-attend"
-                className="absolute border-2 border-white cursor-pointer z-40 rounded-2xl flex items-center h-12 top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2"
-              >
-                <ChevronDown
-                  size={30}
-                  className="animate-bounce duration-1000"
-                />
-              </a>
-              <div className="relative h-full w-full">
-                <div className="absolute h-4 w-12 border-white border-b border-r bg-black top-1/2 right-1/2 translate-x-[195%]"></div>
-                <div className="absolute h-12 w-12 bg-white top-1/2 right-1/2 rounded-tl-2xl translate-x-[300%]"></div>
-              </div>
+        <div className='absolute bottom-0 h-24 w-full bg-white  left-0 right-0'>
+            <div className='relative h-full w-full'>
+                <div className='h-24 absolute w-24 rounded-full bg-black  -top-1/2 right-1/2 translate-x-1/2'>
+                <a href='#whatisbad' className='absolute border-2 border-white cursor-pointer z-40 rounded-2xl flex items-center h-12 top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2'>
+                    <ChevronDown size={30} className='animate-bounce duration-1000 '/>
+                </a>
+                <div className='relative h-full w-full'>
+                    <div className='absolute h-4 w-12 border-white border-b border-r bg-black top-1/2 right-1/2 translate-x-[195%]'>
+
+                    </div>
+                    <div className='absolute h-12 w-12 bg-white top-1/2 right-1/2 rounded-tl-2xl translate-x-[195%]'>
+
+                    </div>
+
+                    <div className='absolute h-4 w-12 bg-black border-white border-b border-l top-1/2 right-1/2 -translate-x-[95%]'>
+
+                    </div>
+                    <div className='absolute h-12 w-12 bg-white top-1/2 right-1/2 rounded-tr-2xl -translate-x-[95%]'>
+
+                    </div>
+
+                </div>
+                
+              
+
+                </div>
+                
+
             </div>
-          </div>
         </div>
       </div>
     </>

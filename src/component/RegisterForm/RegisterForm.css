@@ -1,46 +1,43 @@
 * {
-  
   padding: 0;
   box-sizing: border-box;
 }
+
+
 
 .register-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 90vh; */
- 
-  
+
 }
 
 .register-form h2 {
   font-size: 2.5rem;
 }
 
-.navUp{
+.navUp {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
 }
-.navUp p{
+
+.navUp p {
   text-align: center;
   margin-left: 6rem;
   margin-top: -1rem;
-  font-size: 1.5rem;
-  opacity: .7;
+  font-size: 1.3rem;
+  opacity: 0.7;
   cursor: pointer;
 }
-
 
 .inputBox {
   position: relative;
   width: 100%;
-  /* margin-bottom: 20px; */
 }
 
 .inputBox input,
-select {
-  position: relative;
+.inputBox select {
   width: 100%;
   padding: 10px 0;
   background: transparent;
@@ -48,19 +45,16 @@ select {
   border-bottom: 2px solid #999;
   outline: none;
   color: white;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
+  background-color: black;
 }
 
-.inputBox label {
-  position: absolute;
-  left: 0;
-  padding: 10px 0;
-  pointer-events: none;
-  color: #999;
-}
+
 
 .inputBox input:focus,
-.inputBox input:valid {
+.inputBox input:valid,
+.inputBox select:focus,
+.inputBox select:valid {
   border-bottom: 2px solid tomato;
 }
 
@@ -70,25 +64,22 @@ button {
   padding: 15px;
   border-radius: 50px;
   color: white;
-  font-weight: 600;
-  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   cursor: pointer;
   margin-top: 20px;
 }
 
-/* button:hover {
-  letter-spacing: 0.09em;
-} */
-
 .inputBox label span {
-  position: relative;
   display: inline-flex;
   letter-spacing: 0.05em;
   transition: 0.3s ease-in-out;
 }
 
 .inputBox input:focus ~ label span,
-.inputBox input:valid ~ label span {
+.inputBox input:valid ~ label span,
+.inputBox select:focus ~ label span,
+.inputBox select:valid ~ label span {
   color: tomato;
   letter-spacing: 0.15em;
   transform: translateY(-25px);
@@ -100,9 +91,8 @@ button {
 }
 
 @media (max-width: 768px) {
-  form {
+  .register-form {
     padding: 30px 20px;
-    max-width: 100%;
   }
 
   .inputBox input {
@@ -115,15 +105,25 @@ button {
   }
 
   .inputBox input:focus ~ label span,
-  .inputBox input:valid ~ label span {
+  .inputBox input:valid ~ label span,
+  .inputBox select:focus ~ label span,
+  .inputBox select:valid ~ label span {
     color: tomato;
     letter-spacing: 0.15em;
     transform: translateY(-20px);
   }
+
+  .nameContainer {
+    flex-direction: column;
+  }
+
+  .yearCodeContainer {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
-  form {
+  .register-form {
     padding: 20px 10px;
   }
 
@@ -133,6 +133,43 @@ button {
 
   button {
     padding: 10px;
-    font-size: 0.2rem;
+    font-size: 1rem;
+  }
+
+  .inputBox input:focus ~ label span,
+  .inputBox input:valid ~ label span,
+  .inputBox select:focus ~ label span,
+  .inputBox select:valid ~ label span {
+    color: tomato;
+    letter-spacing: 0.15em;
+    transform: translateY(-20px);
+  }
+
+  .nameContainer {
+    flex-direction: column;
+  }
+
+  .yearCodeContainer {
+    flex-direction: column;
+  }
+}
+
+.nameContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.yearCodeContainer {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .nameContainer {
+    flex-direction: column;
+  }
+
+  .yearCodeContainer {
+    flex-direction: column;
   }
 }
