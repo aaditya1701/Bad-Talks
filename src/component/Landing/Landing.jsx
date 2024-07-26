@@ -24,18 +24,25 @@ export default function Landing() {
     "Ravi just registered...",
     "Shishir just registered...",
     "Khushi just registered...",
+    "Shivanshi just registered...",
     "Bharat just registered...",
     "Anant just registered...",
+    "Devanshi just registered...",
+    "Savan just registered...",
     "Palak just registered...",
     "Aniket just registered...",
+    "Shivanshi just registered...",
     "Jeny just registered...",
     "Anurag just registered...",
     "Poonam just registered...",
     "Tanisha just registered...",
+    "Shivanshi just registered...",
     "Aadeesh just registered...",
     "Tanishq just registered...",
     "Vishal just registered...",
+    "Shivanshi just registered...",
     "Hardik just registered...",
+  
   ];
 
   // Ref for the random names element
