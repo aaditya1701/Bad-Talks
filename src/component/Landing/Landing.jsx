@@ -26,23 +26,26 @@ export default function Landing() {
     "Khushi just registered...",
     "Shivanshi just registered...",
     "Bharat just registered...",
+    "Ravi just registered...",
     "Anant just registered...",
     "Devanshi just registered...",
     "Savan just registered...",
     "Palak just registered...",
     "Aniket just registered...",
+    "Ravi just registered...",
     "Shivanshi just registered...",
     "Jeny just registered...",
     "Anurag just registered...",
     "Poonam just registered...",
     "Tanisha just registered...",
+    "Ravi just registered...",
     "Shivanshi just registered...",
     "Aadeesh just registered...",
     "Tanishq just registered...",
+    "Ravi just registered...",
     "Vishal just registered...",
     "Shivanshi just registered...",
     "Hardik just registered...",
-  
   ];
 
   // Ref for the random names element
@@ -85,6 +88,7 @@ export default function Landing() {
             <img src={event} alt="Event" className="h-full w-auto absolute" />
             <span className="h-[1px] w-24 bg-white absolute -bottom-4 -left-6"></span>
           </div>
+          <p className="text-red-500 text-center mt-4">Free event, open to everyone!</p>
           <div className="flex items-center justify-center mt-6 md:mt-0">
             <Dialog>
               <DialogTrigger>
