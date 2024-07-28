@@ -15,6 +15,7 @@ const RegisterForm = ({ Element }) => {
     email: "",
     phone: "",
     collegeName: "",
+    otherCollegeName: "", // Added this line
     year: "",
     computerCode: "",
     questionToSpeaker: "",
@@ -87,6 +88,7 @@ const RegisterForm = ({ Element }) => {
         
         await addDoc(userCollectionRef, {
           ...formData,
+          collegeName: formData.collegeName === "other" ? formData.otherCollegeName : formData.collegeName, // Adjusted for other college
           ticketId: ticketId,
         });
 
@@ -178,6 +180,20 @@ const RegisterForm = ({ Element }) => {
         </select>
       </div>
 
+      {formData.collegeName === "other" && (
+        <div className="inputBox">
+          <input
+            type="text"
+            id="otherCollegeName"
+            name="otherCollegeName"
+            placeholder="Enter your college name"
+            value={formData.otherCollegeName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+      )}
+
       <div className="yearCodeContainer">
         <div className="inputBox">
           <select
@@ -194,17 +210,18 @@ const RegisterForm = ({ Element }) => {
             <option value="4">4</option>
           </select>
         </div>
-        <div className="inputBox">
-          <input
-            type="text"
-            id="computerCode"
-            name="computerCode"
-            placeholder="Computer Code (Optional)"
-            value={formData.computerCode}
-            onChange={handleChange}
-            required
-          />
-        </div>
+      </div>
+
+      <div className="inputBox">
+        <input
+          type="text"
+          id="computerCode"
+          name="computerCode"
+          placeholder="Computer Code (Only for IPS college)"
+          value={formData.computerCode}
+          onChange={handleChange}
+          required
+        />
       </div>
 
       <div className="inputBox">

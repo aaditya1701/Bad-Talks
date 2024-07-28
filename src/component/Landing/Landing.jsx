@@ -111,7 +111,7 @@ export default function Landing() {
                 onInteractOutside={(e) => {
                   e.preventDefault();
                 }}
-                className="bg-black/10 px-4 md:px-24 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center"
+                className="bg-black/10  md:px-6 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center mt-6 p-2"
               >
                 <DialogTitle className="text-red-600 font-semibold text-3xl py-4">
                   Register
