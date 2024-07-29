@@ -118,7 +118,7 @@ const RegisterForm = ({ Element }) => {
       className="w-full space-y-0 md:space-y-4 backdrop-blur-md "
     >
       <div className="nameContainer">
-        <div className="inputBox">
+        <div className="inputBox no-margin">
           <input
             type="text"
             id="firstName"
@@ -129,7 +129,7 @@ const RegisterForm = ({ Element }) => {
             required
           />
         </div>
-        <div className="inputBox">
+        <div className="inputBox no-margin">
           <input
             type="text"
             id="lastName"
@@ -226,7 +226,7 @@ const RegisterForm = ({ Element }) => {
 
       <div className="inputBox">
         <input
-          className="mt-4"
+          className=""
           type="text"
           id="questionToSpeaker"
           name="questionToSpeaker"

@@ -3,13 +3,10 @@
   box-sizing: border-box;
 }
 
-
-
 .register-form {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .register-form h2 {
@@ -49,8 +46,6 @@
   background-color: black;
 }
 
-
-
 .inputBox input:focus,
 .inputBox input:valid,
 .inputBox select:focus,
@@ -59,7 +54,7 @@
 }
 
 button {
-  background: tomato;
+  background: rgb(14, 4, 2);
   border: none;
   padding: 15px;
   border-radius: 50px;
@@ -96,7 +91,7 @@ button {
   }
 
   .inputBox input {
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
   button {
@@ -128,7 +123,7 @@ button {
   }
 
   .inputBox {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   button {
@@ -156,12 +151,16 @@ button {
 
 .nameContainer {
   display: flex;
-  gap: 20px;
+  gap: 0; /* Set gap to 0 to remove the margin */
 }
 
 .yearCodeContainer {
   display: flex;
   gap: 20px;
+}
+
+.no-margin {
+  margin: 0; /* Class to remove margin */
 }
 
 @media (max-width: 768px) {
