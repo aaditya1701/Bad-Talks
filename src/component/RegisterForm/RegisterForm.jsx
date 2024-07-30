@@ -15,7 +15,7 @@ const RegisterForm = ({ Element }) => {
     email: "",
     phone: "",
     collegeName: "",
-    otherCollegeName: "", // Added this line
+    otherCollegeName: "",
     year: "",
     computerCode: "",
     questionToSpeaker: "",
@@ -29,7 +29,6 @@ const RegisterForm = ({ Element }) => {
     formData.phone !== "" &&
     formData.collegeName !== "" &&
     formData.year !== "" &&
-    formData.computerCode !== "" &&
     formData.questionToSpeaker !== "";
 
   const handleConfetti = () => {
@@ -220,7 +219,6 @@ const RegisterForm = ({ Element }) => {
           placeholder="Computer Code (Only for IPS college)"
           value={formData.computerCode}
           onChange={handleChange}
-          required
         />
       </div>
 

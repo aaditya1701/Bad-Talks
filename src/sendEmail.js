@@ -1,8 +1,11 @@
 import emailjs from 'emailjs-com';
 
 const sendEmail = (formData) => {
-  const serviceID = 'service_u5tje7b';
-  const templateID = 'template_j2o8cah';
+  // const serviceID = 'service_u5tje7b';
+  // const templateID = 'template_j2o8cah';
+  // const userID = 'YOUR_USER_ID';
+  const serviceID = 'service_0urbwu2';
+  const templateID = 'template_k8jz1ve';
   const userID = 'YOUR_USER_ID';
 
   const templateParams = {
@@ -11,7 +14,7 @@ const sendEmail = (formData) => {
     ticketId: formData.ticketId,
   };
 
-  emailjs.init('L33E4Y71oiTUO6lH-');
+  emailjs.init('RjEjxcpu4KezAiqgq')
 
   emailjs.send(serviceID, templateID, templateParams)
     .then((response) => {
