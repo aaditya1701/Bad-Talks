@@ -19,6 +19,8 @@ import About from "./component/About/About";
 import WhatisBad from "./component/Whatisbad/WhatIsBad";
 import Map from "./component/Map";
 
+import Career from "./component/Career/Career";
+
 
 
 function App() {
@@ -73,6 +75,7 @@ function App() {
         <Route path="/ourteam" element={<Team />} />
         <Route path="/ticket" element={<Ticket />} />
         <Route path="/ticket/:id" element={<Ticket />} />
+        <Route path="/career" element={<Career/>} />
       </Routes>
     </div>
   );

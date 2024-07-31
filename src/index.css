@@ -84,3 +84,6 @@ body{
       scrollbar-width: none;  /* Firefox */
 }
   }
+  #animate-updown {
+    animation: mymove 5.5s infinite ease-in-out !important;
+  }
