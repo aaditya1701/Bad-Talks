@@ -21,7 +21,7 @@ export default function Career() {
               Join us. Change lives.
             </h1>
             <p className="text-lg leading-normal text-slate-400">
-              Join Spillmate and help transform mental health with advanced AI. Work on impactful
+              Join uss and help transform your life with advanced AI. Work on impactful
               projects and innovate for a better future.
             </p>
           </div>
