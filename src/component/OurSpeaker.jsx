@@ -6,6 +6,7 @@ import ceo4 from "../assets/Speakers/ceo4.webp";
 import ceo5 from "../assets/Speakers/ceo5.webp";
 import ceo6 from "../assets/Speakers/ceo6.webp";
 import ceo7 from "../assets/Speakers/ceo7.webp";
+import ceo8 from "../assets/Speakers/abhi_mishra.jpg";
 
 export default function OurSpeaker() {
   return (
@@ -53,7 +54,7 @@ export default function OurSpeaker() {
           <img
             src={ceo6}
             alt="Dhirendra Singh"
-            className="h-full max-h-96 w-auto rounded-[6rem] border-4 border-white"
+              className="h-[50vh] w-[29vw] object-cover rounded-[6rem] border-4 border-white"
           />
         </div>
       </section>
@@ -68,20 +69,25 @@ export default function OurSpeaker() {
             </p>
           </div>
           <p className="text-neutral-300 leading-relaxed text-lg md:text-xl">
-          Rounak Anand is a self-taught content creator and software engineer from Narsinghpur, Madhya Pradesh.
+            Rounak Anand is a self-taught content creator and software engineer
+            from Narsinghpur, Madhya Pradesh.
           </p>
           <ul className="list-disc text-lg md:text-xl">
             <li className="text-neutral-300 leading-relaxed">
-            Founder of Unseen MP, a platform showcasing Madhya Pradesh's hidden cultural and historical treasures.
+              Founder of Unseen MP, a platform showcasing Madhya Pradesh's
+              hidden cultural and historical treasures.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-            Holds a Computer Science degree and trained in content creation from Nas Academy.
+              Holds a Computer Science degree and trained in content creation
+              from Nas Academy.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-            Excels in content marketing, social media strategies, and has served clients like Prime Video and MX Player.
+              Excels in content marketing, social media strategies, and has
+              served clients like Prime Video and MX Player.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-            Enjoys writing poems, traveling, exploring culinary delights, and is passionate about storytelling and improving the world.
+              Enjoys writing poems, traveling, exploring culinary delights, and
+              is passionate about storytelling and improving the world.
             </li>
           </ul>
         </div>
@@ -89,7 +95,7 @@ export default function OurSpeaker() {
           <img
             src={ceo2}
             alt="Raunak Anand"
-            className="h-full max-h-96 w-auto rounded-[6rem] border-4 border-white"
+              className="h-[50vh] w-[29vw] object-cover rounded-[6rem] border-4 border-white "
           />
         </div>
       </section>
@@ -105,19 +111,23 @@ export default function OurSpeaker() {
           </div>
           <ul className="list-disc text-lg md:text-xl">
             <li className="text-neutral-300 leading-relaxed">
-            Chairman of Mittal Alliance and CEO of Badbusiness.in, specializing in corporate leadership and strategic growth.
+              Chairman of Mittal Alliance and CEO of Badbusiness.in,
+              specializing in corporate leadership and strategic growth.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Successfully led Mittal Alliance in launching multiple initiatives that support startups and tech professionals.
+              Successfully led Mittal Alliance in launching multiple initiatives
+              that support startups and tech professionals.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Author, YouTuber, blogger, and speaker sharing business and personal growth insights.
+              Author, YouTuber, blogger, and speaker sharing business and
+              personal growth insights.
             </li>
             <li className="text-neutral-300 leading-relaxed">
               Co-founder of FFA Animal NGO, advocating for animal welfare.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Authored influential articles and books that provide valuable insights into business strategy and personal development.
+              Authored influential articles and books that provide valuable
+              insights into business strategy and personal development.
             </li>
           </ul>
         </div>
@@ -125,46 +135,10 @@ export default function OurSpeaker() {
           <img
             src={ceo1}
             alt="Ayush Yadav"
-            className="h-full max-h-96 w-auto rounded-[6rem] border-4 border-white"
+              className="h-[50vh] w-[29vw] object-cover rounded-[6rem] border-4 border-white"
           />
         </div>
       </section>
-      {/* fifth section */}
-      {/* <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-emerald-500 rounded-3xl">
-        <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
-          <div className="relative">
-            <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
-            <h2 className="text-white font-bold text-3xl">Sidhant Sharma</h2>
-            <p className="py-1 text-red-900 font-semibold">
-              (Founder Furry Friends Alliance)
-            </p>
-          </div>
-          <ul className="list-disc text-lg md:text-xl">
-            <li className="text-neutral-300 leading-relaxed">
-              Sidhant Sharma founded Jakpinch.com, an innovative social networking platform, in May 2013.
-            </li>
-            <li className="text-neutral-300 leading-relaxed">
-              He is the founder of Wise International Global, offering diverse outsourcing services since February 2023.
-            </li>
-            <li className="text-neutral-300 leading-relaxed">
-              Co-founder of Furry Friends Alliance, an initiative providing care to animals in need.
-            </li>
-            <li className="text-neutral-300 leading-relaxed">
-              Furry Friends Alliance focuses on supporting vulnerable animals who cannot receive help otherwise.
-            </li>
-            <li className="text-neutral-300 leading-relaxed">
-              Wise International Global provides outsourcing solutions across IT, BPO, finance, healthcare, research, engineering, and creative services.
-            </li>
-          </ul>
-        </div>
-        <div className="lg:w-1/3 flex justify-center lg:justify-end">
-          <img
-            src={ceo3}
-            alt="Ayush Yadav"
-            className="h-full max-h-96 w-auto rounded-[6rem] border-4 border-white"
-          />
-        </div>
-      </section> */}
 
       <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-red-400 rounded-3xl">
         <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
@@ -177,19 +151,23 @@ export default function OurSpeaker() {
           </div>
           <ul className="list-disc text-lg md:text-xl">
             <li className="text-neutral-300 leading-relaxed">
-            Co-Founder & COO at Badbusiness.in | CMO at Global Success Media | President of YLF Madhya Pradesh.
+              Co-Founder & COO at Badbusiness.in | CMO at Global Success Media |
+              President of YLF Madhya Pradesh.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Co-founder & COO of BadBusiness.in, driving operational excellence and business growth.
+              Co-founder & COO of BadBusiness.in, driving operational excellence
+              and business growth.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Diploma Engineering student passionate about innovation and problem-solving.
+              Diploma Engineering student passionate about innovation and
+              problem-solving.
             </li>
             <li className="text-neutral-300 leading-relaxed">
               Proficient in AutoCAD 2D/3D, Canva, and Microsoft Office.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Seeking opportunities in startups or research positions for hands-on experience and skill development.
+              Seeking opportunities in startups or research positions for
+              hands-on experience and skill development.
             </li>
           </ul>
         </div>
@@ -197,7 +175,62 @@ export default function OurSpeaker() {
           <img
             src={ceo4}
             alt="Ayush Yadav"
-            className="h-full max-h-96 w-auto rounded-[3rem]  border-4 border-white"
+              className="h-[50vh] w-[29vw] object-cover rounded-[6rem] border-4 border-white"
+          />
+        </div>
+      </section>
+
+      <section className="relative w-full flex flex-col lg:flex-row gap-4 py-24 px-4 lg:px-12 justify-between bg-pink-400 rounded-3xl">
+        <div className="flex gap-4 flex-col md:w-full lg:w-2/3">
+          <div className="relative">
+            <span className="h-[1px] w-32 bg-white absolute -top-2 -left-8" />
+            <h2 className="text-white font-bold text-3xl">Abhisek Mishra</h2>
+            <p className="py-1 text-red-900 font-semibold">
+              (CEO of Pisarv Technology)
+            </p>
+          </div>
+          <ul className="list-disc text-lg md:text-xl">
+            <li className="text-neutral-300 leading-relaxed">
+              Renowned TEDx speaker
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Known as "The Drone Man" for his innovations
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Developer of an anti-drone system
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Creator of a physical distancing system used at Indore Airport
+              during the COVID-19 pandemic
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Educational background: B.Tech from MNIT Jaipur and a Master's
+              from BITS Pilani
+            </li>
+
+            <li className="text-neutral-300 leading-relaxed">
+              Professional experience with renowned companies like Motorola,
+              Exchanger, and Adobe
+            </li>
+
+            <li className="text-neutral-300 leading-relaxed">
+              Introduced the AI drone "Nabhrakshak", designed to save lives from
+              drowning
+            </li>
+            <li className="text-neutral-300 leading-relaxed">
+              Recipient of the Young Innovator Award 2023
+            </li>
+
+            <li className="text-neutral-300 leading-relaxed">
+              Continues to pioneer advancements in bioengineering and technology
+            </li>
+          </ul>
+        </div>
+        <div className="lg:w-1/3 flex justify-center lg:justify-end">
+          <img
+            src={ceo8}
+            alt="Ayush Yadav"
+               className="h-[50vh] w-[29vw] object-cover rounded-[6rem] border-4 border-white"
           />
         </div>
       </section>
@@ -213,29 +246,35 @@ export default function OurSpeaker() {
           </div>
           <ul className="list-disc text-lg md:text-xl">
             <li className="text-neutral-300 leading-relaxed">
-              Multidisciplinary designer with experience in manufacturing, food products, education, shipping, entertainment, and health
+              Multidisciplinary designer with experience in manufacturing, food
+              products, education, shipping, entertainment, and health
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Promoted campaigns for Mx Player, Alt Balaji, Amazon Prime, and Ubon.
+              Promoted campaigns for Mx Player, Alt Balaji, Amazon Prime, and
+              Ubon.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Work featured on Social Samosa, social media Dissect, Eat My News, Bihari No. 1, and Men's XP.
+              Work featured on Social Samosa, social media Dissect, Eat My News,
+              Bihari No. 1, and Men's XP.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Offers services in graphic design, logo design, UX research, public speaking, and visual design.
+              Offers services in graphic design, logo design, UX research,
+              public speaking, and visual design.
             </li>
             <li className="text-neutral-300 leading-relaxed">
-              Held roles such as User Experience Lead at Habuild and Design Mentor at ADPList.org.
+              Held roles such as User Experience Lead at Habuild and Design
+              Mentor at ADPList.org.
             </li>
           </ul>
         </div>
-        <div className="lg:w-1/4 flex justify-center lg:justify-end">
-          <img
-            src={ceo7}
-            alt="Ayush Yadav"
-            className="h-full max-h-[500px] w-auto rounded-[3rem] border-4 border-white"
-          />
-        </div>
+        <div className="flex justify-center lg:justify-end">
+  <img
+    src={ceo7}
+    alt="Ayush Yadav"
+    className="h-[50vh] w-[29vw] max-w-full object-cover rounded-[6rem] border-4 border-white"
+  />
+</div>
+
       </section>
     </main>
   );
