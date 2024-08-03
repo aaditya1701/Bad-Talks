@@ -94,7 +94,7 @@ const teamData = {
   Social: [
     { name: 'Sonali Singh', img: Sonali },
     { name: 'Savan Lovanshi', img: savan },
-    { name: 'Devanshi Neema', img: devanshi },
+    { name: 'Devanshi Nema', img: devanshi },
     { name: 'Sanjeet Singh Bhadoriya', img: sanjeet },
     { name: 'Krishna', img: Bharat },
     { name: 'Paridhi Mandloi ', img: Paridhi }
