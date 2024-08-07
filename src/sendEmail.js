@@ -4,9 +4,11 @@ const sendEmail = (formData) => {
   // const serviceID = 'service_u5tje7b';
   // const templateID = 'template_j2o8cah';
   // const userID = 'YOUR_USER_ID';
-  const serviceID = 'service_0urbwu2';
-  const templateID = 'template_k8jz1ve';
-  const userID = 'YOUR_USER_ID';
+  // const serviceID = 'service_0urbwu2';
+  // const templateID = 'template_k8jz1ve';
+  // const userID = 'YOUR_USER_ID';
+  const serviceID = 'service_2kut32g';
+  const templateID = 'template_k4jyf99';
 
   const templateParams = {
     name: formData.name,
@@ -14,7 +16,8 @@ const sendEmail = (formData) => {
     ticketId: formData.ticketId,
   };
 
-  emailjs.init('RjEjxcpu4KezAiqgq')
+  // emailjs.init('RjEjxcpu4KezAiqgq')
+  emailjs.init('0sSyArtMTMifXW55_')
 
   emailjs.send(serviceID, templateID, templateParams)
     .then((response) => {

@@ -11,11 +11,9 @@ import Anant from "../../assets/Teams/Lead/Anant.webp"
 import Parag from "../../assets/Teams/Lead/parag.webp"
 // Tech 
 import BharatKhatwani from "../../assets/Teams/Tech/Bharat.webp"
-import Bharat from "../../assets/Teams/Tech/Bharat.webp"
 import Ravi from "../../assets/Teams/Tech/Ravi.webp"
 import Shivanshi from "../../assets/Teams/Tech/Shivanshi.webp"
 import Palak from "../../assets/Teams/Tech/Palak.webp"
-import Ananya from "../../assets/Teams/Tech/Ananya.webp"
 
 
 
@@ -65,7 +63,6 @@ const teamData = {
     { name: 'Ravi Gautam', img: Ravi },
     { name: 'Palak Jaiswal', img: Palak },
     { name: 'Aaditya Mahashabde', img: BharatKhatwani},
-    { name: 'Ananya Gupta', img:  Ananya}
   ],
   Curation: [
     { name: 'Aditya Kumar Joshi', img: Aditya },
@@ -77,7 +74,6 @@ const teamData = {
   Management: [
     { name: 'Sakshi Sharma', img: Sakshi },
     { name: 'Ashley Mathais', img: Ashley },
-    { name: 'Shreya Tiwari', img: Shreya },
     { name: 'Shrishti Arya', img: Shrishti },
     { name: 'Shubh Jain', img: Shubh },
     { name: 'Tanisha Dhakad', img: Tanisha },
@@ -96,7 +92,6 @@ const teamData = {
     { name: 'Savan Lovanshi', img: savan },
     { name: 'Devanshi Nema', img: devanshi },
     { name: 'Sanjeet Singh Bhadoriya', img: sanjeet },
-    { name: 'Krishna', img: Bharat },
     { name: 'Paridhi Mandloi ', img: Paridhi }
   ]
 };

@@ -70,7 +70,7 @@ function App() {
             <Footer />
           </>
         } />         
-        <Route path="/speakers" element={<OurSpeaker />} />
+        {/* <Route path="/speakers" element={<OurSpeaker />} /> */}
         <Route path="/Register" element={<RegisterForm />} />
         <Route path="/ourteam" element={<Team />} />
         <Route path="/ticket" element={<Ticket />} />

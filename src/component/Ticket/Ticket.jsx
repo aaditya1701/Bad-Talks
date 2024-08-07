@@ -121,7 +121,7 @@ export default function Ticket() {
           </h2>
           <article>
             <p className="font-semibold"> <b>Date</b> : 08 August 2024</p>
-            <p className="font-semibold"> <b>Time</b> : 12PM</p>
+            <p className="font-semibold"> <b>Time</b> : 2PM</p>
           </article>
 
 
