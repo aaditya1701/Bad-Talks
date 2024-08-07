@@ -71,6 +71,13 @@ function Navbar() {
         >
           Team
         </a>
+
+        <a
+          href="/internship"
+          className="text-white font-semibold hover:text-red-600"
+        >
+          Internship
+        </a>
         <a
           href="/#footer"
           className="text-white font-semibold hover:text-red-600"

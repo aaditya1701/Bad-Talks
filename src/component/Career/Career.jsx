@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 
 
 
-export default function Career() {
+export default function Internship() {
   return (
     <div >
       <section className="relative py-32">
@@ -18,11 +18,10 @@ export default function Career() {
         <div className=" w-full mx-auto px-4 max-w-7xl  relative z-10">
           <div className="mx-auto max-w-xl text-center">
             <h1 className="mb-6 text-center font-semibold text-4xl  text-white ">
-              Join us. Change lives.
+            Start Your Journey with Our Exciting Internships!
             </h1>
-            <p className="text-lg leading-normal text-slate-400">
-              Join uss and help transform your life with advanced AI. Work on impactful
-              projects and innovate for a better future.
+            <p className="text-lg leading-normal text-slate-400 max-w-md mx-auto">
+            Gain hands-on experience and develop essential skills for your future.
             </p>
           </div>
         </div>
@@ -31,74 +30,94 @@ export default function Career() {
         <div className="w-full mx-auto px-4 max-w-7xl ">
           <div className="grid gap-7 md:grid-cols-3">
             <div className="rounded-2xl border border-slate-700 bg-neutral p-12 text-center transition-shadow hover:shadow-xl ">
-              <h3 className="mb-1 font-semibold text-lg text-white ">UI / UX Designer</h3>
-              <span className="mb-4 block text-xs  text-slate-400">Experience – 3 to 5 years</span>
+              <h3 className="mb-1 font-semibold text-lg text-white ">Web Development</h3>
+              <span className="mb-4 block text-xs  text-slate-400">Internship</span>
               <p className="mb-8 text-slate-400 ">
                 {" "}
-                We are looking for a full-time Software QA Analyst to be part of our team to ensure
-                the top-notch quality, overall functionality and usability.
+                Assist in designing and coding web applications, focusing on functionality and user experience. Great for gaining hands-on experience.
+
+
               </p>
-              <a className="text-sm font-bold text-red-600" href="/contact">
+              <a className="text-sm font-bold text-red-600" href="https://forms.gle/EpqfG2zyhHuUEHbu9" >
                 Apply Now
               </a>
             </div>
             <div className="rounded-2xl border border-slate-700 bg-neutral p-12 text-center transition-shadow hover:shadow-xl ">
-              <h3 className="mb-1 font-semibold text-lg text-white ">Full Stack Engineer</h3>
-              <span className="mb-4 block text-xs text-slate-400">Experience – 3 to 5 years</span>
+              <h3 className="mb-1 font-semibold text-lg text-white ">Application development</h3>
+              <span className="mb-4 block text-xs text-slate-400">Internship</span>
               <p className="mb-8 text-slate-400 ">
                 {" "}
-                We are looking for a full-time Software QA Analyst to be part of our team to ensure
-                the top-notch quality, overall functionality and usability.
+                Support development and testing of software applications. Ideal for learning about application lifecycle and improving coding skills.
               </p>
-              <a className="text-sm font-bold text-red-600" href="/contact">
+              <a className="text-sm font-bold text-red-600" href=" https://forms.gle/3pN16B8HiP5qX4ZE7">
                 Apply Now
               </a>
             </div>
             <div className="rounded-2xl border border-slate-700 bg-neutral p-12 text-center transition-shadow hover:shadow-xl ">
-              <h3 className="mb-1 font-semibold text-lg text-white ">Content Writer</h3>
-              <span className="mb-4 block text-xs text-slate-400">Experience – 1 to 2 years</span>
+              <h3 className="mb-1 font-semibold text-lg text-white ">Software Development </h3>
+              <span className="mb-4 block text-xs text-slate-400">Internship</span>
               <p className="mb-8 text-slate-400 ">
                 {" "}
-                We are looking for a full-time Software QA Analyst to be part of our team to ensure
-                the top-notch quality, overall functionality and usability.
+                Contribute to software design and development projects. Gain experience in coding, debugging, and software lifecycle management.
               </p>
-              <a className="text-sm font-bold text-red-600" href="/contact">
+              <a className="text-sm font-bold text-red-600" href=" https://forms.gle/3wQdLBqn1TuVH5fbA">
                 Apply Now
               </a>
             </div>
             <div className="rounded-2xl border border-slate-700 bg-neutral p-12 text-center transition-shadow hover:shadow-xl ">
-              <h3 className="mb-1 font-semibold text-lg text-white ">React Developer</h3>
-              <span className="mb-4 block text-xs text-slate-400">Experience – 3 to 5 years</span>
+              <h3 className="mb-1 font-semibold text-lg text-white ">Blockchain Intern</h3>
+              <span className="mb-4 block text-xs text-slate-400">Internship</span>
               <p className="mb-8 text-slate-400 ">
                 {" "}
-                We are looking for a full-time Software QA Analyst to be part of our team to ensure
-                the top-notch quality, overall functionality and usability.
+                Work on blockchain development projects, gaining experience in smart contracts and distributed ledger technology. Ideal for tech enthusiasts.
               </p>
-              <a className="text-sm font-bold text-red-600" href="/contact">
+              <a className="text-sm font-bold text-red-600" href="https://forms.gle/JoJN1WWcaLSrndca9">
                 Apply Now
               </a>
             </div>
             <div className="rounded-2xl border border-slate-700 bg-neutral p-12 text-center transition-shadow hover:shadow-xl ">
-              <h3 className="mb-1 font-semibold text-lg text-white ">Growth Hacker</h3>
-              <span className="mb-4 block text-xs text-slate-400 ">Experience – 3 to 5 years</span>
+              <h3 className="mb-1 font-semibold text-lg text-white ">HTML/ CSS / JS DEVS (UNPAID) </h3>
+              <span className="mb-4 block text-xs text-slate-400 ">Internship</span>
               <p className="mb-8 text-slate-400 ">
                 {" "}
-                We are looking for a full-time Software QA Analyst to be part of our team to ensure
-                the top-notch quality, overall functionality and usability.
+                Build and style web pages using HTML, CSS, and JavaScript. Perfect for learning front-end development and design principles.
               </p>
               <a className="text-sm font-bold text-red-600" href="/contact">
                 Apply Now
               </a>
             </div>
             <div className="rounded-2xl border border-slate-700 bg-neutral p-12 text-center transition-shadow hover:shadow-xl">
-              <h3 className="mb-1 font-semibold text-lg  text-white">Media Marketer</h3>
-              <span className="mb-4 block text-xs text-slate-400 ">Experience – 3 to 5 years</span>
+              <h3 className="mb-1 font-semibold text-lg  text-white">Business Development Executive </h3>
+              <span className="mb-4 block text-xs text-slate-400 ">Internship</span>
               <p className="mb-8 text-slate-400">
                 {" "}
-                We are looking for a full-time Software QA Analyst to be part of our team to ensure
-                the top-notch quality, overall functionality and usability.
+                Drive business growth by identifying opportunities and creating strategies. Develop skills in sales, marketing, and client relationship management.
               </p>
-              <a className="text-sm font-bold text-red-600" href="/contact">
+              <a className="text-sm font-bold text-red-600" href=" https://forms.gle/DJQvH7QtugxqnYUu5">
+                Apply Now
+              </a>
+            </div>
+            <div className="rounded-2xl border border-slate-700 bg-neutral p-12 text-center transition-shadow hover:shadow-xl">
+              <h3 className="mb-1 font-semibold text-lg  text-white">Graphic Designer </h3>
+              <span className="mb-4 block text-xs text-slate-400 ">Internship</span>
+              <p className="mb-8 text-slate-400">
+                {" "}
+                Create visual content for marketing and branding. Develop design skills using tools like Photoshop, Illustrator, and InDesign.
+              </p>
+              <a className="text-sm font-bold text-red-600" href="https://forms.gle/pw5Fo3JWvu7eBUxc7">
+                Apply Now
+              </a>
+            </div>
+
+
+            <div className="rounded-2xl border border-slate-700 bg-neutral p-12 text-center transition-shadow hover:shadow-xl">
+              <h3 className="mb-1 font-semibold text-lg  text-white">Research Intern </h3>
+              <span className="mb-4 block text-xs text-slate-400 ">Internship</span>
+              <p className="mb-8 text-slate-400">
+                {" "}
+                Assist with research projects, data collection, and analysis. Ideal for gaining experience in research methodologies and data interpretation.
+              </p>
+              <a className="text-sm font-bold text-red-600" href="https://forms.gle/XuV1haArbdkVYuLL7">
                 Apply Now
               </a>
             </div>
@@ -106,7 +125,7 @@ export default function Career() {
          
         </div>
       </section>
-      <section className="relative py-24 ">
+      {/* <section className="relative py-24 ">
         <picture className="pointer-events-none absolute inset-0 -z-10 ">
           <img
             alt="gradient"
@@ -266,9 +285,9 @@ export default function Career() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <CompanyCards />
+      
       <Footer/>
     </div>
   );
