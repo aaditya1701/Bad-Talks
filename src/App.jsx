@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { useEffect } from "react";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Footer from "./component/Footer/Footer";
 import Navbar from "./component/Navbar/Navbar";
-import EventDetails from "./component/EventDetails/EventDetails";
+// import EventDetails from "./component/EventDetails/EventDetails";
 
 
 import RegisterForm from "./component/RegisterForm/RegisterForm";
@@ -11,20 +11,28 @@ import "./App.css";
 import Landing from "./component/Landing/Landing";
 
 import NewSection from "./component/NewSection";
-import OurSpeaker from "./component/OurSpeaker";
+// import OurSpeaker from "./component/OurSpeaker";
 import AboutUs from "./component/AboutUs/About";
 import Team from "./component/team/Team";
 import Ticket from "./component/Ticket/Ticket";
-import About from "./component/About/About";
+// import About from "./component/About/About";
 import WhatisBad from "./component/Whatisbad/WhatIsBad";
 import Map from "./component/Map";
 
+import StartAttendanceScanner from './component/AttendanceScanner/StartAttendanceScanner';
+import EndAttendanceScanner from './component/AttendanceScanner/EndAttendanceScanner';
+import AdminPage from './component/AdminPage/AdminPage';
+import AdminLogin from './component/AdminLogin/AdminLogin';
+import StartEventQr from './component/EventQr/StartEventQr'; // Import StartEventQr
+import EndEventQr from './component/EventQr/EndEventQr'; // Import EndEventQr
 
 import Internship from "./component/Career/Career";
 
 
 
 function App() {
+  const isAdminLoggedIn = localStorage.getItem('adminLoggedIn');
+
   useEffect(() => {
     const elements = document.querySelectorAll("section, img:not(.no-fade)");
 
@@ -59,26 +67,61 @@ function App() {
 
   return (
     <div className="app bg-black ">
-      <Navbar />
       <Routes>
         <Route path="/" element={
           <>
+            <Navbar />
             <Landing />
-            <WhatisBad/>
+            <WhatisBad />
             <AboutUs />
             <NewSection />
             <Map />
             <Footer />
           </>
-        } />         
+        } />
         {/* <Route path="/speakers" element={<OurSpeaker />} /> */}
-        <Route path="/Register" element={<RegisterForm />} />
-        <Route path="/ourteam" element={<Team />} />
-        <Route path="/ticket" element={<Ticket />} />
-        <Route path="/ticket/:id" element={<Ticket />} />
-        <Route path="/internship" element={<Internship/>} />
+
+        <Route path="/Register" element={
+          <>
+            <Navbar />
+            <RegisterForm />
+          </>} />
+
+        <Route path="/ourteam" element={
+          <>
+            <Navbar />
+            <Team />
+          </>} />
+
+        <Route path="/ticket" element={<>
+          <Navbar />
+          <Ticket />
+        </>} />
+
+        <Route path="/ticket/:id" element={<>
+          <Navbar />
+          <Ticket />
+        </>} />
+
+        <Route path="/internship" element={
+          <>
+            <Navbar />
+            <Internship />
+          </>} />
+
       </Routes>
-    </div>
+
+      <div className='AdminClass'>
+        <Routes>
+          <Route path="/EventStart" element={<StartAttendanceScanner />} />
+          <Route path="/EventEnd" element={<EndAttendanceScanner />} />
+          <Route path="/Admin" element={isAdminLoggedIn ? <AdminPage /> : <Navigate to="/adminlogin" />} />
+          <Route path="/StartEventQr" element={isAdminLoggedIn ? <StartEventQr /> : <Navigate to="/" />} />
+          <Route path="/EndEventQr" element={isAdminLoggedIn ? <EndEventQr /> : <Navigate to="/" />} />
+          <Route path="/adminlogin" element={<AdminLogin />} />
+        </Routes>
+      </div >
+    </div >
   );
 }
 

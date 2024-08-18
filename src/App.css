@@ -9,15 +9,23 @@
   scroll-behavior: smooth;
 }
 
+.AdminClass {
+  background-color: white !important;
+}
+
+
+
 .logo {
   height: 6em;
-  
+
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -26,6 +34,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -58,17 +67,20 @@
 /* Ensure images are centered */
 img {
   display: block;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto;
+  /* Center horizontally */
 }
 
 /* Define the fading and transition effects */
-section, img {
+section,
+img {
   /* opacity: 0; */
   transform: translateY(20px);
   transition: opacity 1s, transform 1s;
 }
 
-section.visible, img.visible {
+section.visible,
+img.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -81,10 +93,12 @@ section.visible, img.visible {
 
 
 @media (max-width: 768px) {
+
   .section,
   .img {
     opacity: 1;
     transform: translateX(0);
-    transition: none; /* Remove transition on small screens */
+    transition: none;
+    /* Remove transition on small screens */
   }
 }

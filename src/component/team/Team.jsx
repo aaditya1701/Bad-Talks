@@ -14,6 +14,8 @@ import BharatKhatwani from "../../assets/Teams/Tech/Bharat.webp"
 import Ravi from "../../assets/Teams/Tech/Ravi.webp"
 import Shivanshi from "../../assets/Teams/Tech/Shivanshi.webp"
 import Palak from "../../assets/Teams/Tech/Palak.webp"
+import Aaditya from "../../assets/Teams/Tech/AadityaMahashabde.webp"
+
 
 
 
@@ -62,14 +64,14 @@ const teamData = {
     { name: 'Shivanshi Gupta', img: Shivanshi },
     { name: 'Ravi Gautam', img: Ravi },
     { name: 'Palak Jaiswal', img: Palak },
-    { name: 'Aaditya Mahashabde', img: BharatKhatwani},
+    { name: 'Aaditya Mahashabde', img: Aaditya },
   ],
   Curation: [
     { name: 'Aditya Kumar Joshi', img: Aditya },
     { name: 'Khushi Nikam', img: Khushi },
     { name: 'Somya Kinkar', img: Soumya },
     { name: 'Vishal Kumar', img: Vishal },
-    { name: 'Anushka Meena', img: Anushka  }
+    { name: 'Anushka Meena', img: Anushka }
   ],
   Management: [
     { name: 'Sakshi Sharma', img: Sakshi },
@@ -105,8 +107,8 @@ const Team = () => {
   };
 
   const getColumnCount = (teamSize) => {
-    if (teamSize <= 5) return 5 ;
-   
+    if (teamSize <= 5) return 5;
+
     return 4;
   };
 
@@ -136,7 +138,7 @@ const Team = () => {
             </div>
             <div className="team-name">{member.name}</div>
             <div className="team-additional-content">
-              
+
             </div>
           </div>
         ))}

@@ -36,12 +36,11 @@ function Navbar() {
   return (
     <div className="flex justify-between py-4 px-8 h-20 sticky top-0 z-[999999]  items-center">
       <div className="Nav_left">
-       <a href="/#home">  <img src={logo} alt="Logo"  /></a>
+        <a href="/#home">  <img src={logo} alt="Logo" /></a>
       </div>
       <div
-        className={`hidden md:flex gap-6 rounded-full  bg-white/10 backdrop-blur-md py-4 px-12 ${
-          isOpen ? "open" : ""
-        }`}
+        className={`hidden md:flex gap-6 rounded-full  bg-white/10 backdrop-blur-md py-4 px-12 ${isOpen ? "open" : ""
+          }`}
       >
         <a
           href="/#home"
@@ -64,7 +63,7 @@ function Navbar() {
         >
           Speakers
         </a>
-        
+
         <a
           href="/ourteam"
           className="text-white font-semibold hover:text-red-600"
@@ -91,7 +90,7 @@ function Navbar() {
 
           <DialogTrigger>
             <div className="register-button">
-            REGISTER NOW
+              REGISTER NOW
               <svg
                 fill="currentColor"
                 viewBox="0 0 24 24"
@@ -106,8 +105,8 @@ function Navbar() {
             </div>
           </DialogTrigger>
           <DialogContent onInteractOutside={(e) => {
-          e.preventDefault();
-        }} className="bg-black/10 px-4 md:px-24 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center">
+            e.preventDefault();
+          }} className="bg-black/10 px-4 md:px-24 max-w-xs md:max-w-md backdrop-blur-md rounded-3xl flex flex-col items-center justify-center">
             <DialogTitle className="text-red-600 font-semibold text-3xl py-4">
               Register
             </DialogTitle>
@@ -124,7 +123,7 @@ function Navbar() {
           <div className="  text-black h-full w-full flex items-start justify-start py-12 relative">
             <SheetClose asChild>
               <X color="white" size={28} className=" absolute right-4 top-2" />
-              </SheetClose>
+            </SheetClose>
             <div className="flex flex-col gap-4 items-center w-full mt-8 ">
               <a
                 href="/#home"
@@ -134,48 +133,56 @@ function Navbar() {
               </a>
 
               <SheetClose asChild>
-              <a
-                href="/#bad"
-                className="text-white text-2xl font-semibold hover:text-red-600"
-              >
-                Why Attend?
-              </a>
+                <a
+                  href="/#bad"
+                  className="text-white text-2xl font-semibold hover:text-red-600"
+                >
+                  Why Attend?
+                </a>
               </SheetClose>
-             
+
               <SheetClose asChild>
-              <a
-                href="/#about"
-                className="text-white text-2xl font-semibold hover:text-red-600"
-              >
-                About Us
-              </a>
-              </SheetClose>
-              <SheetClose asChild>
-              <a
-                href="/speakers"
-                className="text-white text-2xl font-semibold hover:text-red-600"
-              >
-                Speakers
-              </a>
-              </SheetClose>
-              
-              <SheetClose asChild>
-              <a
-                href="/ourteam"
-                className="text-white text-2xl font-semibold hover:text-red-600"
-              >
-                Team
-              </a>
+                <a
+                  href="/#about"
+                  className="text-white text-2xl font-semibold hover:text-red-600"
+                >
+                  About Us
+                </a>
               </SheetClose>
               <SheetClose asChild>
-              <a
-                href="/#footer"
-                className="text-white  text-2xl font-semibold hover:text-red-600"
-              >
-                Contact Us
-              </a>
+                <a
+                  href="/speakers"
+                  className="text-white text-2xl font-semibold hover:text-red-600"
+                >
+                  Speakers
+                </a>
               </SheetClose>
-{/* 
+              <SheetClose asChild>
+                <a
+                  href="/internship"
+                  className="text-white text-2xl font-semibold hover:text-red-600"
+                >
+                  Internship
+
+                </a>
+              </SheetClose>
+              <SheetClose asChild>
+                <a
+                  href="/ourteam"
+                  className="text-white text-2xl font-semibold hover:text-red-600"
+                >
+                  Team
+                </a>
+              </SheetClose>
+              <SheetClose asChild>
+                <a
+                  href="/#footer"
+                  className="text-white  text-2xl font-semibold hover:text-red-600"
+                >
+                  Contact Us
+                </a>
+              </SheetClose>
+              {/* 
               <SheetClose asChild>
               <div className="register-button">
               REGISTER NOW

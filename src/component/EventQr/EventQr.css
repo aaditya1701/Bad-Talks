@@ -1,0 +1,46 @@
+.event-qr-page {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.qrContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.qrRightDiv {
+    width: 50%;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+
+}
+
+p {
+    font-weight: bold;
+    color: black;
+    font-size: 24px;
+}
+
+.event-qr-page .qrLeftDiv {
+
+    width: 50%;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+}
+
+.qrImage {
+    width: 55%;
+    /* height: 50%; */
+}
+
+.event-qr img {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+}
